@@ -1,0 +1,198 @@
+from app.server import app
+from app.db import init_db, get_db
+import json
+
+class TestVehicleAPI:
+    """
+    Test suite for the Vehicle API.
+    """
+
+    def setup_method(self):
+        """
+        Set up the test client and in-memory database before each test.
+        """
+        app.config['TESTING'] = True
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'  # In-memory DB
+        self.client = app.test_client()
+
+        with app.app_context():
+            init_db()  # Initialize the database schema
+
+        self.example_vehicle = {
+            "vin": "1HGCM82633A123456",
+            "manufacturer_name": "Honda",
+            "description": "Reliable sedan",
+            "horse_power": 150,
+            "model_name": "Accord",
+            "model_year": 2020,
+            "purchase_price": 25000.50,
+            "fuel_type": "Gasoline"
+        }
+
+    def teardown_method(self):
+        """
+        Clean up the database after each test.
+        """
+        with app.app_context():
+            db = get_db()
+            db.execute("DELETE FROM vehicles")
+            db.commit()
+
+    def setup_method(self):
+        """
+        Set up the test client before each test.
+        """
+        self.client = app.test_client()
+        self.example_vehicle = {
+            "vin": "1HGCM82633A123456",
+            "manufacturer_name": "Honda",
+            "description": "Reliable sedan",
+            "horse_power": 150,
+            "model_name": "Accord",
+            "model_year": 2020,
+            "purchase_price": 25000.50,
+            "fuel_type": "Gasoline"
+        }
+
+    def test_get_all_vehicles_empty(self):
+        """
+        Test GET /vehicle when there are no vehicles in the database.
+        """
+        response = self.client.get('/vehicle')
+        assert response.status_code == 200
+        assert response.json == []
+
+    def test_add_vehicle_success(self):
+        """
+        Test POST /vehicle with valid data.
+        """
+        response = self.client.post(
+            '/vehicle',
+            data=json.dumps(self.example_vehicle),
+            content_type='application/json'
+        )
+        assert response.status_code == 201
+        
+        # Check if the returned vehicle data matches the example vehicle
+        vehicle_data = response.json
+        assert vehicle_data["vin"] == self.example_vehicle["vin"]
+        assert vehicle_data["manufacturer_name"] == self.example_vehicle["manufacturer_name"]
+        assert vehicle_data["description"] == self.example_vehicle["description"]
+        assert vehicle_data["horse_power"] == self.example_vehicle["horse_power"]
+        assert vehicle_data["model_name"] == self.example_vehicle["model_name"]
+        assert vehicle_data["model_year"] == self.example_vehicle["model_year"]
+        assert vehicle_data["purchase_price"] == self.example_vehicle["purchase_price"]
+        assert vehicle_data["fuel_type"] == self.example_vehicle["fuel_type"]
+
+
+    def test_get_vehicle_by_vin_not_found(self):
+        """
+        Test GET /vehicle/{vin} with a non-existing VIN.
+        """
+        response = self.client.get('/vehicle/INVALID_VIN')
+        assert response.status_code == 400  # Expecting 400 due to invalid VIN format
+        assert "Invalid VIN format" in response.json["error"]
+
+    def test_get_vehicle_by_vin_success(self):
+        """
+        Test GET /vehicle/{vin} with an existing VIN.
+        """
+        # First, add the vehicle to the database
+        self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
+
+        # Now, fetch the vehicle by VIN
+        response = self.client.get(f'/vehicle/{self.example_vehicle["vin"]}')
+        assert response.status_code == 200  # Expecting 200 OK
+        assert response.json["vin"] == self.example_vehicle["vin"]  # Verify VIN matches
+        assert response.json["manufacturer_name"] == self.example_vehicle["manufacturer_name"]  # Verify other fields as needed
+
+    def test_get_vehicle_by_invalid_vin(self):
+        """
+        Test GET /vehicle/{vin} with an invalid VIN format.
+        """
+        # Testing with a VIN that does not conform to the correct format
+        response = self.client.get('/vehicle/INVALID_VIN')
+        assert response.status_code == 400  # Expecting 400 Bad Request
+        assert "Invalid VIN format" in response.json["error"]
+
+
+    def test_update_vehicle_success(self):
+        """
+        Test PUT /vehicle/{vin} to update an existing vehicle.
+        """
+        # Add a vehicle first
+        self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
+
+        # Update the vehicle
+        updated_data = self.example_vehicle.copy()
+        updated_data["description"] = "Updated description"
+        response = self.client.put(
+            f'/vehicle/{self.example_vehicle["vin"]}',
+            data=json.dumps(updated_data),
+            content_type='application/json'
+        )
+        assert response.status_code == 200  # Expecting 200 OK
+        assert response.json["description"] == "Updated description"  # Check if the description is updated
+
+
+    def test_update_vehicle_not_found(self):
+        """
+        Test PUT /vehicle/{vin} with a non-existing VIN.
+        """
+        updated_data = self.example_vehicle.copy()
+        updated_data["description"] = "Updated description"
+        
+        # Try updating a non-existing vehicle
+        response = self.client.put(
+            '/vehicle/INVALID_VIN',
+            data=json.dumps(updated_data),
+            content_type='application/json'
+        )
+        assert response.status_code == 404  # Expecting 404 Not Found
+        assert "Vehicle not found" in response.json["error"]
+
+    def test_update_vehicle_invalid_data(self):
+        """
+        Test PUT /vehicle/{vin} with invalid (missing) data.
+        """
+        # Add a vehicle first
+        self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
+
+        # Try updating with missing required fields
+        updated_data = self.example_vehicle.copy()
+        updated_data.pop("description")
+        
+        response = self.client.put(
+            f'/vehicle/{self.example_vehicle["vin"]}',
+            data=json.dumps(updated_data),
+            content_type='application/json'
+        )
+        assert response.status_code == 422  # Expecting 422 Unprocessable Entity
+        assert "Missing fields" in response.json["error"]
+
+    def test_delete_vehicle_not_found(self):
+        """
+        Test DELETE /vehicle/{vin} when the vehicle does not exist.
+        """
+        response = self.client.delete('/vehicle/11111111111111111')
+        assert response.status_code == 404  # Expecting 404 Not Found
+        assert response.json["error"] == "Vehicle not found"
+
+    def test_delete_vehicle_invalid_vin_format(self):
+        """
+        Test DELETE /vehicle/{vin} with a malformed VIN (too short).
+        """
+        response = self.client.delete('/vehicle/123')  # Malformed VIN (too short)
+        assert response.status_code == 400  # Expecting 400 Bad Request
+        assert "Invalid VIN format" in response.json["error"]
+
+    def test_delete_vehicle_success(self):
+        """
+        Test DELETE /vehicle/{vin} when the vehicle exists.
+        """
+        # First, add the vehicle to the database
+        self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
+
+        # Now, delete the vehicle
+        response = self.client.delete(f'/vehicle/{self.example_vehicle["vin"]}')
+        assert response.status_code == 204  # Expecting 204 No Content (successful deletion)
