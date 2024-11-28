@@ -43,14 +43,18 @@ def get_all_vehicles():
     logger.debug("Fetching all vehicles with pagination")
     db = get_db()
 
-    # Default pagination parameters
-    page = int(request.args.get('page', 1))
-    page_size = int(request.args.get('page_size', 10))
-    offset = (page - 1) * page_size
+    # # Default pagination parameters
+    # page = int(request.args.get('page', 1))
+    # page_size = int(request.args.get('page_size', 10))
+    # offset = (page - 1) * page_size
 
-    # Fetch the vehicles for the current page
+    # # Fetch the vehicles for the current page
+    # cursor = db.execute(
+    #     "SELECT * FROM vehicles LIMIT ? OFFSET ?", (page_size, offset)
+    # )
+
     cursor = db.execute(
-        "SELECT * FROM vehicles LIMIT ? OFFSET ?", (page_size, offset)
+        "SELECT * FROM vehicles"
     )
     vehicles = [dict(row) for row in cursor.fetchall()]
     logger.info(f"Found {len(vehicles)} vehicles")
@@ -59,7 +63,7 @@ def get_all_vehicles():
 
 
 @app.route('/vehicle', methods=['POST'])
-@limiter.limit("5/minute") 
+@limiter.limit("1000/minute") 
 def add_vehicle():
     logger.debug("Adding a new vehicle")
     if not request.is_json:

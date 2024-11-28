@@ -39,3 +39,447 @@
 2024-11-27 16:01:23,942 - werkzeug - INFO -  * Restarting with stat
 2024-11-27 16:01:24,676 - werkzeug - WARNING -  * Debugger is active!
 2024-11-27 16:01:24,680 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:18:02,416 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 10:18:02,417 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 10:18:02,420 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:18:07,461 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:18:07,468 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:25:36,438 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:25:36,565 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:25:37,240 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:25:37,245 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:25:47,373 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:25:47,438 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:25:52,638 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:25:52,642 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:26:27,162 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:26:27,295 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:26:32,364 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:26:32,368 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:27:01,845 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:27:01,962 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:27:07,113 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:27:07,118 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:28:25,184 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:28:25,322 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:28:26,193 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:28:26,203 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:28:47,438 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:28:47,520 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:28:48,274 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:28:48,279 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:28:56,389 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 10:28:56,489 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:28:57,142 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:28:57,148 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:29:03,167 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 10:29:03,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 10:29:03,172 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:29:03,752 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:29:03,757 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:30:45,343 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:30:45,450 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:30:46,042 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:30:46,047 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:31:12,442 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:31:12,528 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:31:13,141 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:31:13,148 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:31:45,705 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:31:45,774 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:31:46,379 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:31:46,384 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:33:12,481 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:33:12,547 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:33:13,235 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:33:13,242 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:33:17,322 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:33:17,395 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:33:18,022 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:33:18,027 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:33:35,267 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:33:35,332 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:33:35,901 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:33:35,908 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:37:34,480 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:37:34,550 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:37:35,141 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:37:35,146 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:37:41,254 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:37:41,325 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:37:41,910 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:37:41,916 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:38:42,676 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:38:42,740 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:38:43,324 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:38:43,328 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:40:31,782 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-28 10:40:31,851 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 10:40:32,493 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 10:40:32,498 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 10:53:29,477 - app.server - INFO - Request received for vehicle data
+2024-11-28 10:53:29,488 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 10:53:29,488 - app.server - ERROR - An error occurred: string indices must be integers, not 'str'
+2024-11-28 10:53:29,488 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 10:53:29] "[35m[1mPOST /vehicle HTTP/1.1[0m" 500 -
+2024-11-28 10:53:47,373 - app.server - INFO - Request received for vehicle data
+2024-11-28 10:53:47,373 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 10:53:47,378 - app.server - ERROR - An error occurred: string indices must be integers, not 'str'
+2024-11-28 10:53:47,380 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 10:53:47] "[35m[1mPOST /vehicle HTTP/1.1[0m" 500 -
+2024-11-28 10:55:12,684 - app.server - INFO - Request received for vehicle data
+2024-11-28 10:55:12,685 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 10:55:12,687 - app.server - INFO - Vehicle 1HGCM82633A123456 added successfully
+2024-11-28 10:55:12,691 - app.server - INFO - Request processed successfully
+2024-11-28 10:55:12,692 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 10:55:12] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 10:58:58,306 - app.server - INFO - Request received for vehicle data
+2024-11-28 10:58:58,306 - app.server - DEBUG - Fetching all vehicles with pagination
+2024-11-28 10:58:58,309 - app.server - INFO - Found 1 vehicles
+2024-11-28 10:58:58,309 - app.server - INFO - Request processed successfully
+2024-11-28 10:58:58,309 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 10:58:58] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 11:03:26,236 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\db.py', reloading
+2024-11-28 11:03:26,399 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:03:27,331 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:03:27,338 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:03:46,585 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\db.py', reloading
+2024-11-28 11:03:46,653 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:03:47,285 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:03:47,289 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:03:49,334 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\db.py', reloading
+2024-11-28 11:03:49,402 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:03:49,975 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:03:49,981 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:03:58,551 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 11:03:58,553 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 11:03:58,555 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:03:59,189 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:03:59,192 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:05:07,826 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:05:07,826 - app.server - DEBUG - Fetching all vehicles with pagination
+2024-11-28 11:05:07,826 - app.server - INFO - Found 1 vehicles
+2024-11-28 11:05:07,826 - app.server - INFO - Request processed successfully
+2024-11-28 11:05:07,826 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:05:07] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 11:06:56,849 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 11:06:56,918 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:06:57,533 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:06:57,546 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:07:06,253 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 11:07:06,254 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 11:07:06,255 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:07:06,831 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:07:06,835 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:07:13,049 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:07:13,052 - app.server - DEBUG - Fetching all vehicles with pagination
+2024-11-28 11:07:13,052 - app.server - INFO - Found 1 vehicles
+2024-11-28 11:07:13,053 - app.server - INFO - Request processed successfully
+2024-11-28 11:07:13,053 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:07:13] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 11:07:58,519 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 11:07:58,611 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:07:59,368 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:07:59,374 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:08:52,079 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,079 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,079 - app.server - INFO - Vehicle AI0A0VPDUEE2T9T8L added successfully
+2024-11-28 11:08:52,085 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,085 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,091 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,093 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,094 - app.server - INFO - Vehicle S099JRYBTIGYN2B75 added successfully
+2024-11-28 11:08:52,095 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,095 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,102 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,102 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,104 - app.server - INFO - Vehicle 4YKFKC9RTNLFI0078 added successfully
+2024-11-28 11:08:52,108 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,108 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,114 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,115 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,115 - app.server - INFO - Vehicle 9ZRUC4PNYK3HYLF7C added successfully
+2024-11-28 11:08:52,119 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,120 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,125 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,125 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,128 - app.server - INFO - Vehicle 2E172UG5T1DZU6YIM added successfully
+2024-11-28 11:08:52,133 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,133 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,139 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,140 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,141 - app.server - INFO - Vehicle QGIC1M287674DF603 added successfully
+2024-11-28 11:08:52,145 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,146 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,153 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,155 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,156 - app.server - INFO - Vehicle NTJC0E2UWJHOHQ3X8 added successfully
+2024-11-28 11:08:52,162 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,164 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,170 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,172 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,172 - app.server - INFO - Vehicle 1NHEWWQF3Y46QEE53 added successfully
+2024-11-28 11:08:52,176 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,177 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,185 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,186 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,186 - app.server - INFO - Vehicle 0RYG6S2PN20Y0G9XS added successfully
+2024-11-28 11:08:52,192 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,192 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:08:52,200 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:08:52,200 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:08:52,201 - app.server - INFO - Vehicle 1SPC8Y55ZKGYX4IOF added successfully
+2024-11-28 11:08:52,206 - app.server - INFO - Request processed successfully
+2024-11-28 11:08:52,206 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:08:52] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:09:40,777 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:09:40,777 - app.server - DEBUG - Fetching all vehicles with pagination
+2024-11-28 11:09:40,777 - app.server - INFO - Found 10 vehicles
+2024-11-28 11:09:40,780 - app.server - INFO - Request processed successfully
+2024-11-28 11:09:40,780 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:09:40] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 11:16:40,835 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:16:40,837 - app.server - DEBUG - Fetching all vehicles with pagination
+2024-11-28 11:16:40,837 - app.server - INFO - Found 10 vehicles
+2024-11-28 11:16:40,838 - app.server - INFO - Request processed successfully
+2024-11-28 11:16:40,838 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:16:40] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 11:32:19,953 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:19,958 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:19,961 - app.server - INFO - Vehicle 23R4306NOLG6Z8SPY added successfully
+2024-11-28 11:32:19,965 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:19,965 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:19] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:32:19,975 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:19,975 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:19,975 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:19,975 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:19,975 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:19] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:19,984 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:19,985 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:19,986 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:19,986 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:19,986 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:19] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:19,991 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:19,992 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:19,994 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:19,994 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:19,994 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:19] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,001 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,003 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,004 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,005 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,005 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,009 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,009 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,013 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,013 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,013 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,018 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,018 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,020 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,021 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,021 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,026 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,028 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,029 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,030 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,031 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,037 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,038 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,038 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,039 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,039 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:20,042 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:20,042 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:20,047 - app.server - ERROR - Vehicle with VIN 23R4306NOLG6Z8SPY already exists
+2024-11-28 11:32:20,047 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:20,047 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:20] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:25,914 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:25,925 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:25,927 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:25,929 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:25,929 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:25] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:25,940 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:25,942 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:25,942 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:25,944 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:25,944 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:25] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:25,949 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:25,949 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:25,956 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:25,956 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:25,958 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:25] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:25,966 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:25,968 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:25,968 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:25,971 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:25,971 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:25] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:43,848 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-28 11:32:43,971 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 11:32:44,716 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 11:32:44,720 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 11:32:51,802 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,802 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,802 - app.server - INFO - Vehicle 5983G91KJDWKWMYE2 added successfully
+2024-11-28 11:32:51,807 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,807 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:32:51,815 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,815 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,815 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,817 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,818 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,823 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,825 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,826 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,827 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,827 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,833 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,835 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,835 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,836 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,836 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,842 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,844 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,845 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,845 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,846 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,852 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,852 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,853 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,853 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,854 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,861 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,862 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,863 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,864 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,864 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,869 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,869 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,871 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,871 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,872 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,879 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,880 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,881 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,882 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,883 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:51,887 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:51,887 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:51,888 - app.server - ERROR - Vehicle with VIN 5983G91KJDWKWMYE2 already exists
+2024-11-28 11:32:51,889 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:51,889 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:51] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,273 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,273 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,275 - app.server - INFO - Vehicle 28W4G8VZVC036A206 added successfully
+2024-11-28 11:32:55,278 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,279 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:32:55,286 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,287 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,287 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,288 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,288 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,292 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,293 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,294 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,295 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,296 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,302 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,303 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,303 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,304 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,304 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,310 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,310 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,311 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,312 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,312 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,319 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,320 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,321 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,321 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,322 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,327 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,328 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,329 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,330 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,330 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,337 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,338 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,338 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,340 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,340 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,344 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,345 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,347 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,347 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,347 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:55,354 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:55,356 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:55,356 - app.server - ERROR - Vehicle with VIN 28W4G8VZVC036A206 already exists
+2024-11-28 11:32:55,356 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:55,357 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:55] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:59,067 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:59,071 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:59,071 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:59,071 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:59,072 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:59,078 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:59,079 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:59,079 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:59,079 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:59,079 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:59,085 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:59,085 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:59,086 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:59,087 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:59,087 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:32:59,091 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:32:59,092 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:32:59,092 - app.server - WARNING - Missing fields: ['vin', 'manufacturer_name', 'description', 'horse_power', 'model_name', 'model_year', 'purchase_price', 'fuel_type']
+2024-11-28 11:32:59,093 - app.server - INFO - Request processed successfully
+2024-11-28 11:32:59,093 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:32:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,191 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,191 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,191 - app.server - INFO - Vehicle F3D80TDDFRU9OV2WE added successfully
+2024-11-28 11:33:59,198 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,198 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-28 11:33:59,203 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,203 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,203 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,203 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,203 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,210 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,210 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,211 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,211 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,211 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,215 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,218 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,219 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,219 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,220 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,225 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,225 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,225 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,227 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,227 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,233 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,234 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,235 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,235 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,235 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,239 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,240 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,241 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,241 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,242 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,248 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,250 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,251 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,251 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,252 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,256 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,257 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,257 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,258 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,259 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
+2024-11-28 11:33:59,264 - app.server - INFO - Request received for vehicle data
+2024-11-28 11:33:59,268 - app.server - DEBUG - Adding a new vehicle
+2024-11-28 11:33:59,268 - app.server - ERROR - Vehicle with VIN F3D80TDDFRU9OV2WE already exists
+2024-11-28 11:33:59,269 - app.server - INFO - Request processed successfully
+2024-11-28 11:33:59,269 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 11:33:59] "[31m[1mPOST /vehicle HTTP/1.1[0m" 422 -
