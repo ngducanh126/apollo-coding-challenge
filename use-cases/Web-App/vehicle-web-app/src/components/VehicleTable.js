@@ -22,7 +22,7 @@ const VehicleTable = ({ vehicles }) => {
             <td>{vehicle.model_name}</td>
             <td>{vehicle.model_year}</td>
             <td>{vehicle.horse_power}</td>
-            <td>${vehicle.purchase_price.toFixed(2)}</td>
+            <td>${vehicle.purchase_price}</td>
             <td>{vehicle.fuel_type}</td>
             </tr>
         ))}

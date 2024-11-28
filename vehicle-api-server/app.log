@@ -1396,3 +1396,100 @@
 2024-11-28 18:05:44,490 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:05:44] "GET /vehicle HTTP/1.1" 200 -
 2024-11-28 18:08:33,042 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
 2024-11-28 18:08:33,392 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 18:08:35,125 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 18:08:35,167 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-28 18:21:47,350 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:21:47,398 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:21:47,409 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:21:47,465 - app.server - INFO - Request processed successfully
+2024-11-28 18:21:47,476 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:21:47] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:21:47,490 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:21:47,492 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:21:47,493 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:21:47,496 - app.server - INFO - Request processed successfully
+2024-11-28 18:21:47,496 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:21:47] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:21:47,516 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:21:47,520 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:21:47,523 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:21:47,529 - app.server - INFO - Request processed successfully
+2024-11-28 18:21:47,529 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:21:47] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:21:51,337 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:21:51,339 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:21:51,340 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:21:51,342 - app.server - INFO - Request processed successfully
+2024-11-28 18:21:51,342 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:21:51] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:22:00,059 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:22:00,061 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:22:00,063 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:22:00,064 - app.server - INFO - Request processed successfully
+2024-11-28 18:22:00,065 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:22:00] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:22:00,071 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:22:00,072 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:22:00,073 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:22:00,079 - app.server - INFO - Request processed successfully
+2024-11-28 18:22:00,080 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:22:00] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:27:26,659 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:27:26,661 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:27:26,661 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:27:26,665 - app.server - INFO - Request processed successfully
+2024-11-28 18:27:26,666 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:27:26] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:27:26,674 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:27:26,675 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:27:26,677 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:27:26,681 - app.server - INFO - Request processed successfully
+2024-11-28 18:27:26,682 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:27:26] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:31:27,904 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:31:27,906 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:31:27,907 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:31:27,909 - app.server - INFO - Request processed successfully
+2024-11-28 18:31:27,910 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:31:27] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:31:27,924 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:31:27,926 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:31:27,928 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:31:27,932 - app.server - INFO - Request processed successfully
+2024-11-28 18:31:27,933 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:31:27] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:32:34,393 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:32:34,394 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:32:34,394 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:32:34,397 - app.server - INFO - Request processed successfully
+2024-11-28 18:32:34,397 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:32:34] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:32:34,403 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:32:34,403 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:32:34,405 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:32:34,409 - app.server - INFO - Request processed successfully
+2024-11-28 18:32:34,410 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:32:34] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:34:19,374 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:34:19,375 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:34:19,376 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:34:19,378 - app.server - INFO - Request processed successfully
+2024-11-28 18:34:19,378 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:34:19] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:34:19,388 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:34:19,390 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:34:19,391 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:34:19,393 - app.server - INFO - Request processed successfully
+2024-11-28 18:34:19,394 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:34:19] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:35:00,964 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:35:00,966 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:35:00,967 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:35:00,971 - app.server - INFO - Request processed successfully
+2024-11-28 18:35:00,973 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:00] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:35:00,983 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:35:00,984 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:35:00,987 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:35:00,989 - app.server - INFO - Request processed successfully
+2024-11-28 18:35:00,990 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:00] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:35:09,401 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:35:09,402 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:35:09,403 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:35:09,405 - app.server - INFO - Request processed successfully
+2024-11-28 18:35:09,406 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:09] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:35:10,759 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:35:10,761 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:35:10,762 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:35:10,767 - app.server - INFO - Request processed successfully
+2024-11-28 18:35:10,768 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:10] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:35:10,779 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:35:10,781 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:35:10,782 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:35:10,784 - app.server - INFO - Request processed successfully
+2024-11-28 18:35:10,785 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:10] "GET /vehicle HTTP/1.1" 200 -
