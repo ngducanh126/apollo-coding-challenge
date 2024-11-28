@@ -6,6 +6,7 @@ import re
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import logging
+from flask_cors import CORS
 
 
 # Setup Logging
@@ -22,6 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+CORS(app) 
 limiter = Limiter(get_remote_address, app=app)
 
 @app.before_request
@@ -40,7 +42,7 @@ def teardown_appcontext(exception):
 @app.route('/vehicle', methods=['GET'])
 @limiter.limit("100/hour")  
 def get_all_vehicles():
-    logger.debug("Fetching all vehicles with pagination")
+    logger.debug("Fetching all vehicles")
     db = get_db()
 
     # # Default pagination parameters
@@ -48,7 +50,6 @@ def get_all_vehicles():
     # page_size = int(request.args.get('page_size', 10))
     # offset = (page - 1) * page_size
 
-    # # Fetch the vehicles for the current page
     # cursor = db.execute(
     #     "SELECT * FROM vehicles LIMIT ? OFFSET ?", (page_size, offset)
     # )
@@ -78,6 +79,11 @@ def add_vehicle():
     if missing_fields:
         logger.warning(f"Missing fields: {missing_fields}")
         return jsonify({"error": "Missing fields", "missing": missing_fields}), 422
+
+    # Validate VIN 
+    if len(data.get("vin", "")) != 17:
+        logger.error(f"Invalid VIN length for {data.get('vin')}")
+        return jsonify({"error": "VIN must be exactly 17 characters long"}), 400
 
     db = get_db()
     try:
