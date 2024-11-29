@@ -1,17 +1,19 @@
 from flask import Flask, g
 from strawberry.flask.views import GraphQLView
 import strawberry
-from .db import get_db, init_db, close_db
+from .db import get_db, init_db
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 with app.app_context():
     init_db()
 
 @app.teardown_appcontext
 def teardown(exception):
-    close_db(exception)
+    pass
 
 # Define the Vehicle type
 @strawberry.type
