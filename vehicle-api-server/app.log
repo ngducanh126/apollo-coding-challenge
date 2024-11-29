@@ -1493,3 +1493,507 @@
 2024-11-28 18:35:10,782 - app.server - INFO - Found 38 vehicles
 2024-11-28 18:35:10,784 - app.server - INFO - Request processed successfully
 2024-11-28 18:35:10,785 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:35:10] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:26,950 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:26,951 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:26,953 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:26,955 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:26,956 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:26] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:30,956 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:30,958 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:30,959 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:30,964 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:30,965 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:30] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:30,981 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:30,983 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:30,984 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:30,988 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:30,988 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:30] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:43,957 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:43,960 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:43,961 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:43,963 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:43,964 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:43] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:43,970 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:43,971 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:43,975 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:43,977 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:43,977 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:43] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:50,248 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:50,250 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:50,253 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:50,255 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:50,256 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:50] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:36:50,263 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:36:50,266 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:36:50,268 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:36:50,270 - app.server - INFO - Request processed successfully
+2024-11-28 18:36:50,272 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:36:50] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:37:05,705 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:37:05,706 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:37:05,708 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:37:05,711 - app.server - INFO - Request processed successfully
+2024-11-28 18:37:05,711 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:37:05] "GET /vehicle HTTP/1.1" 200 -
+2024-11-28 18:37:05,716 - app.server - INFO - Request received for vehicle data
+2024-11-28 18:37:05,721 - app.server - DEBUG - Fetching all vehicles
+2024-11-28 18:37:05,721 - app.server - INFO - Found 38 vehicles
+2024-11-28 18:37:05,723 - app.server - INFO - Request processed successfully
+2024-11-28 18:37:05,725 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 18:37:05] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 10:34:18,102 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 10:34:18,102 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 10:34:18,108 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 10:34:18,657 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 10:34:18,673 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 10:35:12,867 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:12,869 - app.server - DEBUG - Fetching all vehicles
+2024-11-29 10:35:12,871 - app.server - INFO - Found 38 vehicles
+2024-11-29 10:35:12,874 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:12,874 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:12] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 10:35:12,889 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:12,893 - app.server - DEBUG - Fetching all vehicles
+2024-11-29 10:35:12,894 - app.server - INFO - Found 38 vehicles
+2024-11-29 10:35:12,897 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:12,898 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:12] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 10:35:43,401 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:43,403 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:43,404 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:43] "OPTIONS /vehicle HTTP/1.1" 200 -
+2024-11-29 10:35:43,410 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:43,411 - app.server - DEBUG - Adding a new vehicle
+2024-11-29 10:35:43,413 - app.server - ERROR - Invalid VIN length for 3333333333333333
+2024-11-29 10:35:43,413 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:43,414 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:43] "[31m[1mPOST /vehicle HTTP/1.1[0m" 400 -
+2024-11-29 10:35:53,897 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:53,904 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:53,905 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:53] "OPTIONS /vehicle HTTP/1.1" 200 -
+2024-11-29 10:35:53,917 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:53,919 - app.server - DEBUG - Adding a new vehicle
+2024-11-29 10:35:53,928 - app.server - INFO - Vehicle 33333333333333333 added successfully
+2024-11-29 10:35:53,934 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:53,935 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:53] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-29 10:35:59,123 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:59,124 - app.server - DEBUG - Fetching all vehicles
+2024-11-29 10:35:59,127 - app.server - INFO - Found 39 vehicles
+2024-11-29 10:35:59,131 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:59,133 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:59] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 10:35:59,141 - app.server - INFO - Request received for vehicle data
+2024-11-29 10:35:59,142 - app.server - DEBUG - Fetching all vehicles
+2024-11-29 10:35:59,144 - app.server - INFO - Found 39 vehicles
+2024-11-29 10:35:59,146 - app.server - INFO - Request processed successfully
+2024-11-29 10:35:59,147 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 10:35:59] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 10:50:58,223 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 10:50:58,431 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 10:50:59,341 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 10:50:59,359 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:01:45,578 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:01:45,740 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:02:39,937 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:02:39,939 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:02:39,943 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:02:40,487 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:02:40,495 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:22:06,198 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:22:06,471 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:22:07,286 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:22:07,294 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:22:39,820 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:22:39,875 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:22:40,455 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:22:40,460 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:22:48,942 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:22:48,952 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:22:48,955 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:22:49,481 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:22:49,481 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:24:09,611 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:24:09,674 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:24:10,240 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:24:10,245 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:24:54,852 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:24:54,915 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:24:55,533 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:24:55,538 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:26:11,533 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:26:11,534 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:26:11,536 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:26:12,083 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:26:12,095 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:27:05,912 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:27:05,967 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:27:06,543 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:27:06,549 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:27:20,327 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 11:27:20,327 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 11:27:20,334 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:27:20,897 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:27:20,901 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:28:10,612 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:28:10,669 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:28:11,229 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:28:11,235 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:33:09,784 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:33:09,892 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:33:11,017 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:33:11,023 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:34:40,266 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 11:34:40,319 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:34:40,905 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:34:40,905 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:34:50,063 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:34:50,127 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:34:50,709 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:34:50,711 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:35:17,679 - app.server - INFO - Request received for vehicle data
+2024-11-29 11:35:17,680 - app.server - DEBUG - sending post request
+2024-11-29 11:35:17,686 - app.server - INFO - Request processed successfully
+2024-11-29 11:35:17,687 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 11:35:17] "[35m[1mPOST /vehicle HTTP/1.1[0m" 201 -
+2024-11-29 11:35:39,434 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:35:39,493 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:35:40,118 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:35:40,130 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:35:40,735 - app.server - INFO - Request received for vehicle data
+2024-11-29 11:35:40,739 - app.server - DEBUG - sending post request
+2024-11-29 11:35:40,742 - app.server - ERROR - database error
+2024-11-29 11:35:40,744 - app.server - INFO - Request processed successfully
+2024-11-29 11:35:40,745 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 11:35:40] "[35m[1mPOST /vehicle HTTP/1.1[0m" 500 -
+2024-11-29 11:44:13,751 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:44:13,910 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:44:14,769 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:44:14,781 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:44:43,170 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 11:44:43,229 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:44:43,848 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:44:43,855 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:55:51,172 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:55:51,377 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:55:52,400 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:55:52,407 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:56:22,847 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:56:22,906 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:56:23,616 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:56:23,621 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:58:17,411 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 11:58:17,492 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:58:18,034 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:58:18,039 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:58:59,700 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 11:58:59,764 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:59:00,388 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:59:00,394 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:59:23,829 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 11:59:23,890 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:59:24,446 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:59:24,451 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 11:59:51,843 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 11:59:51,895 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 11:59:52,483 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 11:59:52,486 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:00:57,537 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 12:00:57,588 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:00:58,347 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:00:58,351 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:01:13,602 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:01:13,657 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:01:14,284 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:01:14,296 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:01:20,027 - app.server - INFO - Request received for vehicle data
+2024-11-29 12:01:20,027 - app.server - INFO - Request processed successfully
+2024-11-29 12:01:20,027 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 12:01:20] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 12:01:47,682 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:01:47,748 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:01:48,368 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:01:48,376 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:01:51,071 - app.server - INFO - Request received for vehicle data
+2024-11-29 12:01:51,075 - app.server - ERROR - database error
+2024-11-29 12:01:51,076 - app.server - INFO - Request processed successfully
+2024-11-29 12:01:51,076 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 12:01:51] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 12:02:47,269 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:02:47,365 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:02:47,901 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:02:47,901 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:03:32,492 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:03:32,550 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:03:33,108 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:03:33,115 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:03:44,264 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:03:44,331 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:03:44,925 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:03:44,931 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:04:35,552 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:04:35,620 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:04:36,170 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:04:36,175 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:05:01,615 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:05:01,687 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:05:02,252 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:05:02,252 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:05:24,595 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:05:24,662 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:05:25,232 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:05:25,238 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:05:41,440 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:05:41,511 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:05:42,082 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:05:42,087 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:05:55,239 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:05:55,298 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:05:55,892 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:05:55,897 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:06:37,450 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:06:37,518 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:06:38,087 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:06:38,090 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:06:42,146 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:06:42,215 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:06:42,849 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:06:42,858 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:09:54,976 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:09:55,046 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:09:55,614 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:09:55,619 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:16:59,694 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:16:59,764 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:17:00,853 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:17:00,861 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:17:30,382 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 12:17:30,440 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:17:30,983 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:17:30,987 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:17:36,081 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:17:36,158 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:17:36,726 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:17:36,732 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:18:10,212 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 12:18:10,264 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:18:10,797 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:18:10,801 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:19:25,945 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 12:19:26,014 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:19:26,591 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:19:26,596 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:27:37,602 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:27:37,791 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:27:38,452 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:27:38,459 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:28:25,134 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\tests\\test_vehicle_api.py', reloading
+2024-11-29 12:28:25,217 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:28:25,817 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:28:25,821 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:29:12,499 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:29:12,552 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:29:13,128 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:29:13,133 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:29:39,557 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:29:39,621 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:29:40,199 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:29:40,204 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:32:35,988 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:32:36,062 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:32:36,729 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:32:36,738 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:32:57,037 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:32:57,102 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:32:57,674 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:32:57,677 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:33:07,842 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 12:33:07,903 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 12:33:08,550 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 12:33:08,557 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 12:46:38,049 - app.server - INFO - Request received for vehicle data
+2024-11-29 12:46:38,066 - app.server - DEBUG - Fetching all vehicles
+2024-11-29 12:46:38,073 - app.server - INFO - Request processed successfully
+2024-11-29 12:46:38,074 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 12:46:38] "GET /vehicle HTTP/1.1" 200 -
+2024-11-29 13:14:20,734 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:14:21,009 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:17:50,206 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:17:50,207 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:17:50,210 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:17:50,745 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:17:50,750 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:18:01,206 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:18:01,211 - app.server - INFO - Request processed successfully
+2024-11-29 13:18:01,212 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:18:01] "[33mGET /vehicle HTTP/1.1[0m" 404 -
+2024-11-29 13:18:01,225 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:18:01,228 - app.server - INFO - Request processed successfully
+2024-11-29 13:18:01,229 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:18:01] "[33mGET /vehicle HTTP/1.1[0m" 404 -
+2024-11-29 13:19:31,197 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:19:31,284 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:19:31,881 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:19:31,891 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:19:51,190 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:19:51,249 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:19:51,815 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:19:51,821 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:19:59,632 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:20:00,094 - app.server - INFO - Request processed successfully
+2024-11-29 13:20:00,094 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:20:00] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:20:58,752 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:20:58,817 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:20:59,570 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:20:59,575 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:21:32,024 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:21:32,101 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:21:32,690 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:21:32,690 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:24:06,720 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:24:06,787 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:24:07,361 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:24:07,369 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:24:10,952 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:24:10,993 - app.server - INFO - Request processed successfully
+2024-11-29 13:24:10,993 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:24:10] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:24:24,542 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:24:24,542 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:24:24,542 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:24:25,071 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:24:25,075 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:24:29,039 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:24:29,071 - app.server - INFO - Request processed successfully
+2024-11-29 13:24:29,072 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:24:29] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:25:11,689 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:25:11,754 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:25:12,319 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:25:12,324 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:25:39,697 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:25:39,766 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:25:40,324 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:25:40,328 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:25:57,540 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:25:57,611 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:25:58,187 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:25:58,191 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:25:59,433 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:25:59,470 - app.server - INFO - Request processed
+2024-11-29 13:25:59,471 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:25:59] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:26:22,173 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:26:22,204 - app.server - INFO - Request processed
+2024-11-29 13:26:22,205 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:26:22] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:27:39,419 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:27:39,525 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:27:40,122 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:27:40,127 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:27:47,204 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:27:47,235 - app.server - INFO - Request processed
+2024-11-29 13:27:47,236 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:27:47] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:28:01,413 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:28:01,476 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:28:02,074 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:28:02,078 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:28:02,704 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:28:02,736 - app.server - INFO - Request processed
+2024-11-29 13:28:02,736 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:28:02] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:28:31,574 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:28:31,644 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:28:32,194 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:28:32,198 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:28:34,571 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:28:34,608 - app.server - INFO - Request processed
+2024-11-29 13:28:34,608 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:28:34] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:28:41,340 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:28:41,430 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:28:41,970 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:28:41,974 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:28:46,042 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:28:46,144 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:28:46,713 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:28:46,724 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:28:48,758 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:28:48,827 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:28:49,398 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:28:49,410 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:28:51,042 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:28:51,076 - app.server - INFO - Request processed
+2024-11-29 13:28:51,076 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:28:51] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:29:23,957 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:29:24,017 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:29:24,564 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:29:24,568 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:29:27,783 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:29:27,816 - app.server - INFO - Request processed
+2024-11-29 13:29:27,817 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:29:27] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:29:38,395 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:29:38,395 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:29:38,400 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:29:38,925 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:29:38,929 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:29:49,077 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\run_rest.py', reloading
+2024-11-29 13:29:49,159 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:29:49,917 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:29:49,922 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:29:54,077 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:29:54,118 - app.server - INFO - Request processed
+2024-11-29 13:29:54,118 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:29:54] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:30:52,924 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:30:52,994 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:30:53,526 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:30:53,530 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:31:00,131 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:31:00,133 - app.server - INFO - Request processed
+2024-11-29 13:31:00,133 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:31:00] "[33mGET /vehicle/ HTTP/1.1[0m" 404 -
+2024-11-29 13:31:08,776 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:31:08,841 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:31:09,395 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:31:09,400 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:31:10,587 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:31:10,588 - app.server - INFO - Fetching all vehicles
+2024-11-29 13:31:10,588 - app.server - DEBUG - Executing query: "SELECT * from vehicles where 1=1 " with params: []
+2024-11-29 13:31:10,590 - app.server - INFO - No vehicles found for the given parameters
+2024-11-29 13:31:10,591 - app.server - INFO - Request processed
+2024-11-29 13:31:10,591 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:31:10] "[33mGET /vehicle HTTP/1.1[0m" 404 -
+2024-11-29 13:31:44,844 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\test.py', reloading
+2024-11-29 13:31:44,925 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:31:45,463 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:31:45,476 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:31:49,069 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:31:49,101 - app.server - INFO - Request processed
+2024-11-29 13:31:49,102 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:31:49] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:34:19,543 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:34:19,604 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:34:20,256 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:34:20,261 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:35:27,281 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:35:27,346 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:35:27,885 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:35:27,889 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:35:32,659 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:35:32,659 - app.server - DEBUG - Fetching a vehicle with vin
+2024-11-29 13:35:32,659 - app.server - ERROR - Server error when fetching vehicle
+2024-11-29 13:35:32,659 - app.server - INFO - Request processed
+2024-11-29 13:35:32,659 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:35:32] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:35:44,571 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:35:44,575 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:35:44,577 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:35:45,084 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:35:45,086 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:35:49,109 - app.server - INFO - Request received for vehicle data
+2024-11-29 13:35:49,109 - app.server - DEBUG - Fetching a vehicle with vin
+2024-11-29 13:35:49,109 - app.server - ERROR - Server error when fetching vehicle
+2024-11-29 13:35:49,109 - app.server - INFO - Request processed
+2024-11-29 13:35:49,109 - werkzeug - INFO - 127.0.0.1 - - [29/Nov/2024 13:35:49] "[35m[1mGET /vehicle/1HGCM82633A123456 HTTP/1.1[0m" 500 -
+2024-11-29 13:37:48,779 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:37:48,835 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:37:49,448 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:37:49,452 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:37:56,090 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:37:56,090 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:37:56,096 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:37:56,613 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:37:56,619 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:39:14,855 - werkzeug - INFO -  * Detected change in 'D:\\interview_prep\\apollo-coding-challenge\\vehicle-api-server\\app\\server.py', reloading
+2024-11-29 13:39:14,918 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:39:15,445 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:39:15,445 - werkzeug - INFO -  * Debugger PIN: 695-834-444
+2024-11-29 13:39:19,085 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 13:39:19,085 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-29 13:39:19,085 - werkzeug - INFO -  * Restarting with stat
+2024-11-29 13:39:19,600 - werkzeug - WARNING -  * Debugger is active!
+2024-11-29 13:39:19,604 - werkzeug - INFO -  * Debugger PIN: 695-834-444

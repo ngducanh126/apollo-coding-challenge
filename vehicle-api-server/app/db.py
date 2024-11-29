@@ -1,42 +1,31 @@
 import sqlite3
-from flask import g
 import os
 
 DATABASE = 'vehicles.db'
 
 def get_db():
-    """
-    Get a database connection, reuse it if already opened.
-    """
-    db = getattr(g, '_database', None)
-    if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
-        db_path = os.path.abspath(DATABASE) 
-        print(f"Using database at: {db_path}") 
-        db.row_factory = sqlite3.Row  
-    return db
+    db_path = os.path.abspath(DATABASE)
+    print(f"Using database at: {db_path}") 
+
+    connection = sqlite3.connect(DATABASE)
+    connection.row_factory = sqlite3.Row
+    return connection
 
 def init_db():
-    """
-    Initialize the vehicles table in the database.
-    """
-    db = get_db()
-    db.execute('''CREATE TABLE IF NOT EXISTS vehicles (
-        vin TEXT PRIMARY KEY COLLATE NOCASE,
-        manufacturer_name TEXT NOT NULL,
-        description TEXT NOT NULL,
-        horse_power INTEGER NOT NULL,
-        model_name TEXT NOT NULL,
-        model_year INTEGER NOT NULL,
-        purchase_price REAL NOT NULL,
-        fuel_type TEXT NOT NULL
-    )''')
-    db.commit()
+    with get_db() as db:
+        cursor = db.cursor()  # Create a cursor explicitly
+        cursor.execute('''CREATE TABLE IF NOT EXISTS vehicles (
+            vin TEXT PRIMARY KEY COLLATE NOCASE,
+            manufacturer_name TEXT NOT NULL,
+            description TEXT NOT NULL,
+            horse_power INTEGER NOT NULL,
+            model_name TEXT NOT NULL,
+            model_year INTEGER NOT NULL,
+            purchase_price REAL NOT NULL,
+            fuel_type TEXT NOT NULL
+        )''')
+        db.commit()  # Commit changes explicitly
 
-def close_db(exception=None):
-    """
-    Close the database connection after each request.
-    """
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.close()
+if __name__ == "__main__":
+    init_db()
+    print("Database initialized.")
