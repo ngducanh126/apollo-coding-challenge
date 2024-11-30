@@ -24,6 +24,9 @@ app = Flask(__name__)
 CORS(app) 
 limiter = Limiter(get_remote_address, app=app)
 
+REQUIRED_FIELDS = ["manufacturer_name", "description", "horse_power",
+                   "model_name", "model_year", "purchase_price", "fuel_type"]
+
 with app.app_context():
     init_db()
     logger.info("Database initialized.")
@@ -45,16 +48,15 @@ def get_all_vehicles():
         return jsonify(vehicles), 200
     except sqlite3.Error as e:
         logger.error('Database error')
-        return jsonify({"error": "Unexpected database error"}),500
+        return jsonify({"error": "Internal server error. Please try again later."}), 500
     except Exception as e:
         logger.error('unexpected server error')
-        return jsonify({'error':'unexpected server error'}), 500
+        return jsonify({"error": "Internal server error. Please try again later."}), 500
 
 @app.route('/vehicle', methods=['POST'])
 @limiter.limit("1000/minute") 
 def add_vehicle():
     logger.debug('Sending post request')
-    db = get_db()
     try:
         data = request.get_json()
     except:
@@ -62,28 +64,46 @@ def add_vehicle():
         return jsonify({'error' : 'data sent is not json'}), 400
     
     # valdiate vin
-    if len(data['vin']) != 17:
-        logger.error('Error POSTing vehicle because of invalid vin')
-        return jsonify({'error' : 'vin not valid'}), 400
+    if not validate_vin(data.get('vin')):
+        logger.error('Invalid VIN format provided')
+        return jsonify({'error': 'Invalid VIN format'}), 422
     
-    #required fields
-    required_fields = ["manufacturer_name", "description", "horse_power",
-                       "model_name", "model_year", "purchase_price", "fuel_type"]
-    missing_fields = [field for field in required_fields if field not in data]
+    # make sure there are no missing fields
+    missing_fields = find_missing_fields(data, REQUIRED_FIELDS)
     if missing_fields:
-        logger.error('Missing fields when POSTing a vehicle')
-        return jsonify({'error ' :'missing fields'}), 422
+        logger.error(f'Missing required fields: {missing_fields}')
+        return jsonify({'error': f'Missing fields: {missing_fields}'}), 422
+    
+    # Validate field types for provided fields
+    field_errors = validate_field_types(data)
+    if field_errors:
+        logger.error(f'Field validation errors: {field_errors}')
+        return jsonify({'error': field_errors}), 422
     
     try:
-        db.execute(''' 
-                   insert into vehicles (vin, manufacturer_name, description, horse_power, model_name, model_year, purchase_price, fuel_type)
-                    values (?,?,?,?,?,?,?,?)
-                   
-                   ''', (data['vin'],data['manufacturer_name'],data['description'],data['horse_power'], data['model_name'], data['model_year'], data['purchase_price'], data['fuel_type']))
-        db.commit()
-        logger.info('Successfully POSTed vehicle')
-        return jsonify(data), 201
+        db = get_db()
 
+        # Check if the VIN already exists in the database
+        cursor = db.execute('SELECT vin FROM vehicles WHERE vin = ?', (data['vin'],))
+        existing_vehicle = cursor.fetchone()
+
+        if existing_vehicle:
+            logger.error(f'VIN already exists: {data["vin"]}')
+            return jsonify({'error': f'Vehicle with VIN {data["vin"]} already exists'}), 409
+
+        # Insert new vehicle
+        db.execute(''' 
+            INSERT INTO vehicles (vin, manufacturer_name, description, horse_power, 
+                                  model_name, model_year, purchase_price, fuel_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (data['vin'], data['manufacturer_name'], data['description'], 
+              data['horse_power'], data['model_name'], data['model_year'], 
+              data['purchase_price'], data['fuel_type']))
+        db.commit()
+
+        logger.info(f'Successfully added new vehicle with VIN: {data["vin"]}')
+        return jsonify(data), 201
+    
     except sqlite3.Error as e:
         logger.error('Database error when trying to POST a vehicle')
         return jsonify({'error':'database error'}), 500
@@ -96,86 +116,174 @@ def add_vehicle():
 @app.route('/vehicle/<vin>', methods=['GET'])
 @limiter.limit("5/minute")  
 def get_vehicle(vin):
-    logger.debug('Fetching a vehicle with VIN ')
-    if len(vin) != 17:
-        logger.error('Invalid vin')
-        return jsonify({'error' : 'Vin is not valid'}) , 400
-    db = get_db()
-    try:
-        cursor = db.execute('select * from vehicles where vin = ? limit 1' , (vin,))
-        data = dict(cursor.fetchone())
-        if not data:
-            logger.error('VIN not found')
-            return jsonify({'error' :'not found'}), 404
-        logger.info("Successfuly fetched vehicle with vin ")
-        return jsonify(data), 200
-    except sqlite3.Error as e:
-        logger.error('Database error when fetching vehicle with vin ')
-        return jsonify({'error' : 'database error'}), 500
-    except Exception as e:
-        logger.error('Server error when fetching vehicle with vin ')
-        return jsonify({'error' : 'server error'}), 500
-    
+    logger.debug(f'Fetching a vehicle with VIN: {vin}')
 
+    # Validate VIN
+    if not validate_vin(vin):
+        logger.error('Invalid VIN format ')
+        return jsonify({'error': 'VIN format is not valid'}), 400
+    
+    try:
+        db = get_db()
+        cursor = db.execute('SELECT * FROM vehicles WHERE vin = ? LIMIT 1', (vin,))
+        row = cursor.fetchone()
+        if not row:
+            logger.error(f'VIN not found: {vin}')
+            return jsonify({'error': 'Vehicle not found'}), 404
+        data = dict(row)
+        logger.info(f'Successfully fetched vehicle with VIN: {vin}')
+        return jsonify(data), 200
+    
+    except sqlite3.Error as e:
+        logger.error(f'Database error when fetching vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Database error'}), 500
+
+    except Exception as e:
+        logger.error(f'Server error when fetching vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Server error'}), 500
+    
 
 @app.route('/vehicle/<vin>', methods=['PUT'])
 @limiter.limit("5/minute") 
 def update_vehicle(vin):
-    logger.debug('Sending a PUT request')
-    if len(vin) != 17:
-        return jsonify({'error' : 'VIN not valid'}), 400
+    logger.debug(f'Received PUT request for vehicle with VIN: {vin}')
+
+    # Validate VIN
+    if not validate_vin(vin):
+        logger.error('Invalid VIN format in URL ')
+        return jsonify({'error': 'Invalid VIN format in URL'}), 400
+    
     try:
         data = request.get_json()
-    except:
-        return jsonify({'error' : 'Data sent is not json. Error'}), 400
+    except Exception as e:
+        logger.error(f'Error parsing JSON for PUT request: {e}')
+        return jsonify({'error': 'Request body must be JSON'}), 400
     
-    #required fields
-    required_fields = ["manufacturer_name", "description", "horse_power",
-                       "model_name", "model_year", "purchase_price", "fuel_type"]
-    missing_fields = [field for field in required_fields if field not in data]
+    # make sure there are no missing fields
+    missing_fields = find_missing_fields(data, REQUIRED_FIELDS)
     if missing_fields:
-        logger.error('Missing fields when PUTing a vehicle')
-        return jsonify({'error' :'missing fields'}), 422
+        logger.error(f'Missing required fields: {missing_fields}')
+        return jsonify({'error': f'Missing fields: {missing_fields}'}), 422
+    
+    # Validate field types for provided fields
+    field_errors = validate_field_types(data)
+    if field_errors:
+        logger.error(f'Field validation errors: {field_errors}')
+        return jsonify({'error': field_errors}), 422
+    
+    # Ensure VIN in the request body matches VIN in the URL
+    if data['vin'] != vin:
+        logger.error('VIN in request body does not match VIN in URL')
+        return jsonify({'error': 'VIN in request body must match VIN in URL'}), 422
     
     try:
         db = get_db()
-        cursor = db.execute('select * from vehicles where vin = ? limit 1' , (vin,))
-        vehicle_fetched = cursor.fetchone()
-        if not vehicle_fetched:
-            return jsonify({'error' : 'VIN not found'}), 404
+        # Check if vehicle exists 
+        cursor = db.execute('SELECT * FROM vehicles WHERE vin = ? LIMIT 1', (vin,))
+        if cursor.fetchone() is None:
+            logger.error(f'No vehicle found with VIN: {vin}')
+            return jsonify({'error': 'Vehicle not found'}), 404
+        
         db.execute('''
-                            update vehicles
-                            set manufacturer_name = ? , description = ?, horse_power = ?,
-                            model_name = ? , model_year = ?, purchase_price = ?, fuel_type = ?
-                            ''', (data['manufacturer_name'], data['description'], data['horse_power'],
-                                  data['model_name'], data['model_year'], data['purchase_price'] , data['fuel_type']))
+                    update vehicles
+                    set manufacturer_name = ? , description = ?, horse_power = ?,
+                    model_name = ? , model_year = ?, purchase_price = ?, fuel_type = ?
+                    ''', (data['manufacturer_name'], data['description'], data['horse_power'],
+                        data['model_name'], data['model_year'], data['purchase_price'] , data['fuel_type']))
         db.commit()
+
+        logger.info(f'Successfully updated vehicle with VIN: {vin}')
         return jsonify(data), 200
 
     except sqlite3.Error as e:
-        return jsonify({'error' : 'database error'}), 500
+        logger.error(f'Database error while updating vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Database error'}), 500
+
     except Exception as e:
-        return jsonify({'error' : 'server error'}), 500
+        logger.error(f'Server error while updating vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Server error'}), 500
 
 
 @app.route('/vehicle/<vin>', methods=['DELETE'])
 @limiter.limit("5/minute") 
 def delete_vehicle(vin):
-    if len(vin) != 17:
-        return jsonify({'error' : 'invalid vin'}), 400
+    logger.debug(f'Received DELETE request for vehicle with VIN: {vin}')
+
+    # Validate VIN
+    if not validate_vin(vin):
+        logger.error('Invalid VIN format provided in URL')
+        return jsonify({'error': 'Invalid VIN format in URL'}), 400
+    
     try:
         db = get_db()
-        cursor = db.execute('select * from vehicles where vin = ?' , (vin,))
-        vehicle_fetched = cursor.fetchone()
-        if not vehicle_fetched:
-            return jsonify({'error' : 'no vehicle found with this vin'}), 404
-        db.execute('delete from vehicles where vin = ?', (vin,))
+
+        # Try to delete the vehicle
+        cursor = db.execute('DELETE FROM vehicles WHERE vin = ?', (vin,))
         db.commit()
+
+        if cursor.rowcount == 0:  # if no rows were deleted
+            logger.error(f'No vehicle found with VIN: {vin}')
+            return jsonify({'error': 'No vehicle found with this VIN'}), 404
+
+        logger.info(f'Successfully deleted vehicle with VIN: {vin}')
         return '', 204
+    
     except sqlite3.Error as e:
-        return jsonify({'error' : 'database error'}), 500
+        logger.error(f'Database error while deleting vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Database error'}), 500
+
     except Exception as e:
-        return jsonify({'error' : 'server error'}), 500
+        logger.error(f'Server error while deleting vehicle with VIN {vin}: {e}')
+        return jsonify({'error': 'Server error'}), 500
+
+
+def validate_vin(vin):
+    if not vin or len(vin) != 17:
+        return False
+    if not vin.isalnum():
+        return False
+    return True
+
+
+def find_missing_fields(data, required_fields):
+    missing_fields = [field for field in required_fields if field not in data]
+    return missing_fields
+
+
+def validate_field_types(data):
+    """
+    Validate the types of fields.
+    ONLY checks fields that are present in the data. 
+    This allows for flexiblity when we validate a POST and PUT request when we want to validate all fields,
+    and also for validating a PATCH request that only sends some fields it wants to update
+    
+    Expected types:
+    - manufacturer_name: string
+    - description: string
+    - horse_power: integer
+    - model_name: string
+    - model_year: integer
+    - purchase_price: decimal (float or int)
+    - fuel_type: string
+    """
+    field_types = {
+        "manufacturer_name": str,
+        "description": str,
+        "horse_power": int,
+        "model_name": str,
+        "model_year": int,
+        "purchase_price": (float, int),
+        "fuel_type": str
+    }
+    
+    errors = []
+
+    for field, expected_type in field_types.items():
+        if field in data:
+            if not isinstance(data[field], expected_type):
+                errors.append(f"{field} must be of type {expected_type.__name__}")
+
+    return errors
 
 
 if __name__ == '__main__':

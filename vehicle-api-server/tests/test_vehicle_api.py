@@ -139,12 +139,20 @@ class TestVehicleAPI:
         """
         Test PUT /vehicle/{vin} with a non-existing VIN.
         """
-        updated_data = self.example_vehicle.copy()
-        updated_data["description"] = "Updated description"
+        updated_data = {
+            "vin": "1HGCM82633A123457",
+            "manufacturer_name": "Honda",
+            "description": "Reliable sedan",
+            "horse_power": 150,
+            "model_name": "Accord",
+            "model_year": 2020,
+            "purchase_price": 25000.50,
+            "fuel_type": "Gasoline"
+        }
         
         # Try updating a non-existing vehicle
         response = self.client.put(
-            '/vehicle/11111111111111111',
+            '/vehicle/1HGCM82633A123457',
             data=json.dumps(updated_data),
             content_type='application/json'
         )
