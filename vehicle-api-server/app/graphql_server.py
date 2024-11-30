@@ -13,7 +13,9 @@ with app.app_context():
 
 @app.teardown_appcontext
 def teardown(exception):
-    pass
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()
 
 # Define the Vehicle type
 @strawberry.type

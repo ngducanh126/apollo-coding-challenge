@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, g
 from app.db import get_db, init_db
 import sqlite3
 import re
@@ -18,24 +18,21 @@ logging.basicConfig(
     ]
 )
 
-# Create a logger instance
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 CORS(app) 
 limiter = Limiter(get_remote_address, app=app)
 
-@app.before_request
-def before_request():
+with app.app_context():
     init_db()
-    logger.info("Request received for vehicle data")
+    logger.info("Database initialized.")
 
 @app.teardown_appcontext
-def teardown_appcontext(exception):
-    if exception:
-        logger.error(f"An error occurred: {exception}")
-    else:
-        logger.info("Request processed successfully")
+def close_db_connection(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()
 
 @app.route('/vehicle', methods=['GET'])
 @limiter.limit("100/hour")  
