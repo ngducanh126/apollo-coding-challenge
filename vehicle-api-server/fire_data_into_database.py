@@ -98,25 +98,5 @@ def feed_bad_data():
             print("Failed to add bad vehicle")
 
 
-def get_valid_argument():
-    while True:
-        print("Please provide a valid argument ('good' or 'bad'):")
-        user_input = input("Type of data to fire: ").strip().lower()
-        if user_input in ["good", "bad"]:
-            return user_input
-        else:
-            print("Invalid input. Try again.")
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Fire data into the database")
-    parser.add_argument("type", nargs="?", help="Type of data to fire: good or bad")
-    args = parser.parse_args()
-
-    # If no argument is provided, prompt the user
-    if not args.type or args.type not in ["good", "bad"]:
-        args.type = get_valid_argument()
-
-    if args.type == "good":
-        feed_good_data()
-    elif args.type == "bad":
-        feed_bad_data()
+    feed_good_data()
