@@ -6,14 +6,17 @@ setup(
     packages=find_packages(), 
     install_requires=[
         "Flask==3.0.0",
-        "strawberry-graphql[flask]==0.199.1",  # For GraphQL support
-        "pytest==7.4.0"  # For testing
+        "strawberry-graphql[flask]==0.199.1",
+        "pytest==7.4.0",
+        "Flask-Limiter>=2.0.1",
+        "flask-cors",
+        "marshmallow==3.19.0",
     ],
     include_package_data=True, 
     entry_points={
         "console_scripts": [
-            "run-server=app.server:app.run",  # CLI shortcut for REST server
-            "run-graphql=app.graphql_server:app.run",  # CLI shortcut for GraphQL server
+            "run-server=app.server:app.run",  
+            "run-graphql=app.graphql_server:app.run",  
         ],
     },
 )
