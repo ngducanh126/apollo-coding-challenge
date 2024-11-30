@@ -1,0 +1,8 @@
+.vehicle-api-server/vehicles.db
+.vehicle-api-server/vehicles2.db
+.vehicle-api-server/app/new_db.py
+.vehicle-api-server/app/new_server.py
+.vehicle-api-server/restAPI_run2.py
+.vehicle-api-server/test_new.py
+.vehicle-api-server/test.py
+.pytest_cache
