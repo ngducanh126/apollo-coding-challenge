@@ -1,19 +1,22 @@
 import sqlite3
 import os
 
-DATABASE = 'vehicles.db'
+DATABASE = os.path.join(os.path.dirname(__file__), 'vehicles.db')
 
 def get_db():
+    # Resolve absolute path for the database
     db_path = os.path.abspath(DATABASE)
-    print(f"Using database at: {db_path}") 
-
-    connection = sqlite3.connect(DATABASE)
+    if not os.path.exists(db_path):
+        print(f"Database at {db_path} does not exist. It will be created.")
+    print(f"Using database at: {db_path}")
+    # Use a file-based SQLite database
+    connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
     return connection
 
 def init_db():
     with get_db() as db:
-        cursor = db.cursor()  # Create a cursor explicitly
+        cursor = db.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS vehicles (
             vin TEXT PRIMARY KEY COLLATE NOCASE,
             manufacturer_name TEXT NOT NULL,
@@ -24,8 +27,4 @@ def init_db():
             purchase_price REAL NOT NULL,
             fuel_type TEXT NOT NULL
         )''')
-        db.commit()  # Commit changes explicitly
-
-if __name__ == "__main__":
-    init_db()
-    print("Database initialized.")
+        db.commit()

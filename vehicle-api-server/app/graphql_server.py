@@ -29,9 +29,11 @@ class Vehicle:
 
 # Resolver for fetching all vehicles
 def resolve_vehicles() -> list[Vehicle]:
+    result = []
     db = get_db()
     vehicles = db.execute("SELECT * FROM vehicles").fetchall()
-    return [
+    for vehicle in vehicles:
+        result.append(
         Vehicle(
             vin=vehicle["vin"],
             manufacturer_name=vehicle["manufacturer_name"],
@@ -42,8 +44,9 @@ def resolve_vehicles() -> list[Vehicle]:
             purchase_price=vehicle["purchase_price"],
             fuel_type=vehicle["fuel_type"],
         )
-        for vehicle in vehicles
-    ]
+        )
+    return result
+    
 
 # Resolver for fetching a vehicle by VIN
 def resolve_vehicle(vin: str) -> Vehicle:
