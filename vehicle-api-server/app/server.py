@@ -21,7 +21,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app) 
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)
 limiter = Limiter(get_remote_address, app=app)
 
 REQUIRED_FIELDS = ["manufacturer_name", "description", "horse_power",
@@ -254,17 +254,8 @@ def validate_field_types(data):
     """
     Validate the types of fields.
     ONLY checks fields that are present in the data. 
-    This allows for flexiblity when we validate a POST and PUT request when we want to validate all fields,
-    and also for validating a PATCH request that only sends some fields it wants to update
-    
-    Expected types:
-    - manufacturer_name: string
-    - description: string
-    - horse_power: integer
-    - model_name: string
-    - model_year: integer
-    - purchase_price: decimal (float or int)
-    - fuel_type: string
+    This allows for flexibility when we validate a POST and PUT request when we want to validate all fields,
+    and also for validating a PATCH request that only sends some fields it wants to update.
     """
     field_types = {
         "manufacturer_name": str,
@@ -272,7 +263,7 @@ def validate_field_types(data):
         "horse_power": int,
         "model_name": str,
         "model_year": int,
-        "purchase_price": (float, int),
+        "purchase_price": float,
         "fuel_type": str
     }
     
@@ -280,8 +271,20 @@ def validate_field_types(data):
 
     for field, expected_type in field_types.items():
         if field in data:
-            if not isinstance(data[field], expected_type):
-                errors.append(f"{field} must be of type {expected_type.__name__}")
+            value = data[field]
+            try:
+                # Convert to the expected type to validate
+                if expected_type == int:
+                    int(value)  
+                elif expected_type == float:
+                    float(value)  
+                elif expected_type == str:
+                    if not isinstance(value, str):
+                        raise ValueError
+                else:
+                    raise ValueError(f"Unsupported type: {expected_type}")
+            except ValueError:
+                errors.append(f"{field} must be convertible to {expected_type.__name__}")
 
     return errors
 
