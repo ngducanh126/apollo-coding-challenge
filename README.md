@@ -30,7 +30,7 @@ This project focuses on building both **REST API and GraphQL** servers for manag
 
   
 
-The **REST API** server follows standard RESTful principles, providing CRUD operations for vehicles. **The GraphQL server** offers a flexible and efficient way to query and mutate data. Both servers use **Python Flask** for the backend and **SQLite** for data storage. Key features include robust validation, error handling, logging, rate limiting, and security best practices. I aim to ensure a reliable and scalable system for managing vehicle data.
+Both servers use **Python Flask** for the backend and **SQLite** for data storage. Key features include robust validation, error handling, logging, rate limiting, and security best practices.
 
   
 
