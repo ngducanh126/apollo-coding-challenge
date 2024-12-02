@@ -1,41 +1,40 @@
 .vehicle-table-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .vehicle-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
-  
-  .vehicle-table thead {
-    background-color: #4a90e2;
-    color: white;
-  }
-  
-  .vehicle-table th,
-  .vehicle-table td {
-    text-align: left;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-  }
-  
-  .vehicle-table th {
-    font-size: 1rem;
-  }
-  
-  .vehicle-table tbody tr:nth-child(even) {
-    background-color: #f3f3f3;
-  }
-  
-  .vehicle-table tbody tr:hover {
-    background-color: #eaf2f8;
-  }
-  
-  .vehicle-table td {
-    font-size: 0.9rem;
-  }
-  
+  padding: 20px;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.vehicle-table thead {
+  background-color: #e53935;
+  color: white;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.vehicle-table th {
+  font-size: 1rem;
+}
+
+.vehicle-table tbody tr:nth-child(even) {
+  background-color: #f8bbd0;
+}
+
+.vehicle-table tbody tr:hover {
+  background-color: #fce4ec;
+}
+
+.vehicle-table td {
+  font-size: 0.9rem;
+}

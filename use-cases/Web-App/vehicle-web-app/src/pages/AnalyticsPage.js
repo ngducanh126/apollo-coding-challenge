@@ -7,6 +7,7 @@ const AnalyticsPage = ({ vehicles }) => {
     // Calculate total vehicles
     const totalVehicles = vehicles.length;
 
+
     // Find the most common manufacturer
     const manufacturerCount = {};
     vehicles.forEach((vehicle) => {

@@ -28,7 +28,7 @@ const EditVehiclePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://127.0.0.1:5000/vehicle`, {
+      const response = await fetch(`http://127.0.0.1:5000/vehicle/${formData['vin']}`,{
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const EditVehiclePage = () => {
 
   return (
     <div className="vehicle-page">
-      <h1>Edit/Add Vehicle</h1>
+      <h1>Edit Vehicle</h1>
       {error && <p>error: {error}</p>}
       <VehicleForm
         formData={formData}
