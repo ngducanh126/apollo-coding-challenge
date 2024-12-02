@@ -368,6 +368,9 @@ The starting point of the application.
 Displays a comprehensive list of vehicles retrieved from the API.
    
 Allows users to navigate to the add, edit, or analytics pages for more specific tasks.
+
+![image](https://github.com/user-attachments/assets/28c6d11b-17c2-4b36-846e-d96fe1267da4)
+
     
 
 **3.  Analytics Page:**
@@ -387,8 +390,13 @@ Provides detailed insights into the stored vehicle data, including:
 -   Average horsepower by manufacturer and purchase price by year visualized as bar charts.
     
 
--   Lazy Loading: The analytics page is configured for lazy loading to optimize performance. It loads only when the user navigates to it, reducing initial load time and improving efficiency for large datasets.
-    
+-   Lazy Loading: The analytics page is configured for lazy loading to optimize performance. It loads only when the user navigates to it and this reduces initial load time
+
+-   ![image](https://github.com/user-attachments/assets/d583f722-12dc-4d58-986c-a28ee2ca8001)
+-   ![image](https://github.com/user-attachments/assets/e0165b46-de6a-420a-b833-35d594b11de2)
+
+
+
 
 **4.  Add Vehicle Page:**
     
@@ -396,6 +404,9 @@ Provides detailed insights into the stored vehicle data, including:
 A form-based page for adding new vehicles to the database.
     
 Validates inputs and handles server errors gracefully, providing feedback to the user.
+
+![image](https://github.com/user-attachments/assets/284cad34-27e2-4e82-b8cb-b28e9d67707d)
+
     
 
 **5.  Edit Vehicle Page:**
@@ -404,6 +415,9 @@ Validates inputs and handles server errors gracefully, providing feedback to the
 Allows users to modify existing vehicle records.
     
 Ensures updated data is submitted securely and displays validation errors when necessary.
+
+![image](https://github.com/user-attachments/assets/e37b43a9-fb72-415b-aa30-03e47b3f315b)
+
     
 
 #### Initial Data Population
