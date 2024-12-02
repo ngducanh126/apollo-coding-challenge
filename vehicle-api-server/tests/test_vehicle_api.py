@@ -91,7 +91,6 @@ class TestVehicleAPI:
         """
         response = self.client.get('/vehicle/INVALID_VIN')
         assert response.status_code == 400  # Expecting 400 due to invalid VIN format
-        # assert "Invalid VIN format" in response.json["error"]
 
     def test_get_vehicle_by_vin_success(self):
         """
@@ -112,8 +111,7 @@ class TestVehicleAPI:
         """
         # Testing with a VIN that does not conform to the correct format
         response = self.client.get('/vehicle/INVALID_VIN')
-        assert response.status_code == 400  # Expecting 400 Bad Request
-        # assert "Invalid VIN format" in response.json["error"]
+        assert response.status_code == 400  
 
 
     def test_update_vehicle_success(self):
@@ -132,7 +130,7 @@ class TestVehicleAPI:
             content_type='application/json'
         )
         assert response.status_code == 200  # Expecting 200 OK
-        assert response.json["description"] == "Updated description"  # Check if the description is updated
+        assert response.json["description"] == "Updated description"  
 
 
     def test_update_vehicle_not_found(self):
@@ -175,32 +173,31 @@ class TestVehicleAPI:
             data=json.dumps(updated_data),
             content_type='application/json'
         )
-        assert response.status_code == 422  # Expecting 422 Unprocessable Entity
-        # assert "Missing fields" in response.json["error"]
+        assert response.status_code == 422  
+
 
     def test_delete_vehicle_not_found(self):
         """
         Test DELETE /vehicle/{vin} when the vehicle does not exist.
         """
         response = self.client.delete('/vehicle/11111111111111111')
-        assert response.status_code == 404  # Expecting 404 Not Found
-        # assert response.json["error"] == "Vehicle not found"
+        assert response.status_code == 404  
 
     def test_delete_vehicle_invalid_vin_format(self):
         """
         Test DELETE /vehicle/{vin} with a malformed VIN (too short).
         """
-        response = self.client.delete('/vehicle/123')  # Malformed VIN (too short)
-        assert response.status_code == 400  # Expecting 400 Bad Request
-        # assert "Invalid VIN format" in response.json["error"]
+        response = self.client.delete('/vehicle/123') 
+        assert response.status_code == 400  
+
 
     def test_delete_vehicle_success(self):
         """
         Test DELETE /vehicle/{vin} when the vehicle exists.
         """
-        # First, add the vehicle to the database
+        # add the vehicle to the database
         self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
 
         # Now, delete the vehicle
         response = self.client.delete(f'/vehicle/{self.example_vehicle["vin"]}')
-        assert response.status_code == 204  # Expecting 204 No Content (successful deletion)
+        assert response.status_code == 204  
