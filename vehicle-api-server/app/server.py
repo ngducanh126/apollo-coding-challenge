@@ -188,8 +188,9 @@ def update_vehicle(vin):
                     update vehicles
                     set manufacturer_name = ? , description = ?, horse_power = ?,
                     model_name = ? , model_year = ?, purchase_price = ?, fuel_type = ?
+                    where vin =?
                     ''', (data['manufacturer_name'], data['description'], data['horse_power'],
-                        data['model_name'], data['model_year'], data['purchase_price'] , data['fuel_type']))
+                        data['model_name'], data['model_year'], data['purchase_price'] , data['fuel_type'], data['vin']))
         db.commit()
 
         logger.info(f'Successfully updated vehicle with VIN: {vin}')
