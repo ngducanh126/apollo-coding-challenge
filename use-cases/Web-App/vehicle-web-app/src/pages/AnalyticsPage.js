@@ -2,6 +2,7 @@ import React from "react";
 import AnalyticsCard from "../components/AnalyticsCard";
 import AnalyticsChart from "../components/AnalyticsChart";
 
+
 const AnalyticsPage = ({ vehicles }) => {
     // Calculate total vehicles
     const totalVehicles = vehicles.length;
@@ -16,8 +17,10 @@ const AnalyticsPage = ({ vehicles }) => {
     manufacturerCount[manufacturer] += 1;
     });
 
+
     let mostCommonManufacturer = "";
     let highestCount = 0;
+
 
     for (const manufacturer in manufacturerCount) {
     if (manufacturerCount[manufacturer] > highestCount) {
@@ -26,12 +29,14 @@ const AnalyticsPage = ({ vehicles }) => {
     }
     }
 
+
     // Calculate the average purchase price
     let totalPurchasePrice = 0;
     vehicles.forEach((vehicle) => {
     totalPurchasePrice += vehicle.purchase_price;
     });
     const avgPurchasePrice = totalPurchasePrice / totalVehicles;
+
 
     // Calculate fuel type distribution
     const fuelTypeDistribution = {};
@@ -43,25 +48,63 @@ const AnalyticsPage = ({ vehicles }) => {
     fuelTypeDistribution[fuelType] += 1;
     });
 
-    // Calculate average horsepower by manufacturer
-    const horsepowerData = {};
-    vehicles.forEach((vehicle) => {
-    const manufacturer = vehicle.manufacturer_name;
-    if (!horsepowerData[manufacturer]) {
-        horsepowerData[manufacturer] = { totalHorsepower: 0, count: 0 };
-    }
-    horsepowerData[manufacturer].totalHorsepower += vehicle.horse_power;
-    horsepowerData[manufacturer].count += 1;
-    });
 
-    const avgHorsepowerByManufacturer = [];
-    for (const manufacturer in horsepowerData) {
-    const stats = horsepowerData[manufacturer];
-    avgHorsepowerByManufacturer.push({
-        manufacturer,
-        avgHorsepower: stats.totalHorsepower / stats.count,
-    });
+    // Calculate average horsepower by manufacturer
+    let totalHorsePowerbyManufacturer = {}
+    for (let i=0;i<totalVehicles;i++){
+      let hp = vehicles[i]['horse_power']
+      let manu = vehicles[i]['manufacturer_name']
+
+      if (!(manu in totalHorsePowerbyManufacturer)){
+        totalHorsePowerbyManufacturer[manu] = hp
+      }else{
+        totalHorsePowerbyManufacturer[manu] += hp
+      }
     }
+
+    let avgHorsepowerByManufacturer = {}
+    for (let i=0;i<totalVehicles;i++){
+      let manu = vehicles[i]['manufacturer_name']
+      let avgHorsepower = totalHorsePowerbyManufacturer[manu] / manufacturerCount[manu]
+      avgHorsepowerByManufacturer[manu] = avgHorsepower
+    }
+
+    console.log('avg HP is ')
+    for (let manu in avgHorsepowerByManufacturer){
+      console.log(manu + ' has avg: ' + avgHorsepowerByManufacturer[manu])
+    }
+
+    // avg purchase price by year
+    let totalPurchasePriceByYear = {}
+    let avgPurchasePriceByYear = {}
+    let yearCount = {}
+    for (let i =0;i < totalVehicles; i++){
+      let year = vehicles[i]['model_year']
+      let purchase_price = vehicles[i]['purchase_price']
+      if (! (year in totalPurchasePriceByYear)){
+        totalPurchasePriceByYear[year] = purchase_price
+      }else{
+        totalPurchasePriceByYear[year] += purchase_price
+      }
+      if (! (year in yearCount)){
+        yearCount[year] = 1
+      }else{
+        yearCount[year] += 1
+      }
+    }
+    for (let year in totalPurchasePriceByYear){
+      console.log(year + ' has total PP '+ totalPurchasePriceByYear[year])
+    }
+    for (let year in totalPurchasePriceByYear){
+      let avgPurchasePrice = totalPurchasePriceByYear[year] / yearCount[year]
+      avgPurchasePriceByYear[year] = avgPurchasePrice
+    }
+
+    console.log('avg purchase price by year :')
+    for (let year in avgPurchasePriceByYear){
+      console.log(year + ' has avg purchase price '+ avgPurchasePriceByYear[year])
+    }
+    
 
   return (
     <div>
@@ -84,8 +127,14 @@ const AnalyticsPage = ({ vehicles }) => {
         data={avgHorsepowerByManufacturer}
         type="bar"
       />
+        <AnalyticsChart
+        title="Average Purchase Price by Year"
+        data={avgPurchasePriceByYear}
+        type="line"
+      />
     </div>
   );
 };
+
 
 export default AnalyticsPage;

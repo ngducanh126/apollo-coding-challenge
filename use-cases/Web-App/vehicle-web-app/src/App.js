@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import {fetchVehicles} from './api';
 import HomePage from './pages/HomePage';
 import VehicleListPage from './pages/VehicleListPage';
 import AnalyticsPage from './pages/AnalyticsPage';
@@ -11,36 +10,33 @@ import EditVehiclePage from './pages/EditVehiclePage';
 function App(){
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [vehicles, setVehicles] = useState([])
+  const [vehicles, setVehicles] = useState([]);
 
-  useEffect(()=> {
-
-    const loadVehicles = async () =>{
-      try{
-        let response = await fetchVehicles();
-        setVehicles(response)
-      }catch(err){
-        setError('error fetching vehicles')
+  useEffect( ()=>{
+    const loadVehicles = async()=>{
+      try {
+        let response = await fetch('http://127.0.0.1:5000/vehicle')
+        let data_got_back = await response.json()
+        setVehicles(data_got_back)
+      }catch(e){
+        setError(e)
       }finally{
         setLoading(false)
       }
     }
-
-    loadVehicles();
-
-  }, [])
+    loadVehicles()
+    }
+    , [])
 
 
   return (
     <Router>
       <Navbar />
       <div>
-        {
-          loading ? (
-            <p>loading vehicles</p>
-          ) : error ? (
-            <p>error!</p>
-          ) : (
+        {loading && <p>Loading... </p>}
+        {error && <p>error...</p>}
+
+          <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/vehicles" element={<VehicleListPage vehicles={vehicles} />} />
@@ -48,8 +44,8 @@ function App(){
             <Route path="/add-vehicle" element={<AddVehiclePage />} />
             <Route path="/edit-vehicle" element={<EditVehiclePage vehicles={vehicles} />} />
           </Routes>
-          )
-        }
+          </div>
+          
       </div>
     </Router>
   );

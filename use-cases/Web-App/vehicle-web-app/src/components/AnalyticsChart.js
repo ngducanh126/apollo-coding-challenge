@@ -7,9 +7,11 @@ import {
   BarElement,
   Tooltip,
   Legend,
+  PointElement,
+  LineElement
 } from "chart.js";
-import { Pie, Bar } from "react-chartjs-2";
-ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend);
+import { Pie, Bar, Line } from "react-chartjs-2";
+ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend, PointElement, LineElement);
 
 const AnalyticsChart = ({ title, data, type }) => {
     // dynamic colors for the chart
@@ -22,9 +24,10 @@ const AnalyticsChart = ({ title, data, type }) => {
       return colors;
     };
   
-    const chartData =
-      type === "pie"
-        ? {
+    let chartData = {}
+    if (type === "pie"){
+      chartData =
+         {
             labels: Object.keys(data),
             datasets: [
               {
@@ -33,17 +36,32 @@ const AnalyticsChart = ({ title, data, type }) => {
               },
             ],
           }
-        : {
-            labels: data.map((item) => item.manufacturer),
+    }
+    else if (type==='bar'){
+      chartData = {
+            labels: Object.keys(data),
             datasets: [
               {
                 label: "Average Horsepower",
-                data: data.map((item) => item.avgHorsepower),
-                backgroundColor: generateColors(data.length),
+                data: Object.values(data),
+                backgroundColor: generateColors(Object.keys(data).length),
               },
             ],
           };
-  
+        }
+        else if (type==='line'){
+          chartData = {
+                labels: Object.keys(data),
+                datasets: [
+                  {
+                    label: "Average Purchase Price by year",
+                    data: Object.values(data),
+                    backgroundColor: generateColors(Object.keys(data).length),
+                  },
+                ],
+              };
+            }
+
     return (
       <div style={{ marginBottom: "40px", textAlign: "center" }}>
         <h3>{title}</h3>
@@ -54,7 +72,8 @@ const AnalyticsChart = ({ title, data, type }) => {
           }}
         >
           {type === "pie" && <Pie data={chartData} />}
-          {type === "bar" && <Bar data={chartData} options={{ maintainAspectRatio: true }} />}
+          {type === "bar" && <Bar data={chartData}  />}
+          {type === "line" && <Line data={chartData}  />}
         </div>
       </div>
     );

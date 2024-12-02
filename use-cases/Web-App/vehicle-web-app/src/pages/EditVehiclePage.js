@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import VehicleForm from "../components/VehicleForm";
+import "./VehiclePage.css";
 
 const EditVehiclePage = () => {
   const [formData, setFormData] = useState({
@@ -17,18 +18,18 @@ const EditVehiclePage = () => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const updatedFormData = { ...formData }; 
-    const fieldName = e.target.name; 
+    const updatedFormData = { ...formData };
+    const fieldName = e.target.name;
     const fieldValue = e.target.value;
     updatedFormData[fieldName] = fieldValue;
-    setFormData(updatedFormData); 
+    setFormData(updatedFormData);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch(`http://127.0.0.1:5000/vehicle`, {
-        method: "POST",
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
@@ -36,10 +37,10 @@ const EditVehiclePage = () => {
       });
 
       if (response.ok) {
-        navigate("/vehicles"); // Redirect to vehicle list
+        navigate("/vehicles");
       } else {
         const errorData = await response.json();
-        setError(errorData.error || "Failed to update vehicle");
+        setError(errorData.error);
       }
     } catch (err) {
       setError("Error connecting to the server");
@@ -47,9 +48,9 @@ const EditVehiclePage = () => {
   };
 
   return (
-    <div>
+    <div className="vehicle-page">
       <h1>Edit/Add Vehicle</h1>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p>error: {error}</p>}
       <VehicleForm
         formData={formData}
         handleChange={handleChange}
