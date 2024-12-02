@@ -1,6 +1,7 @@
 from app.server import app
 from app.db import init_db, get_db
 import json
+import logging
 
 class TestVehicleAPI:
     """
@@ -12,11 +13,18 @@ class TestVehicleAPI:
         Set up the test client and in-memory database before each test.
         """
         app.config['TESTING'] = True
+        app.config['DEBUG'] = True  
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'  # In-memory DB
+
+        # Configure logging
+        app.logger.setLevel(logging.DEBUG) 
+        for handler in app.logger.handlers:
+            handler.setLevel(logging.DEBUG)
+
         self.client = app.test_client()
 
         with app.app_context():
-            init_db()  # Initialize the database schema
+            init_db()
 
         self.example_vehicle = {
             "vin": "1HGCM82633A123459",
@@ -53,14 +61,6 @@ class TestVehicleAPI:
             "purchase_price": 25000.50,
             "fuel_type": "Gasoline"
         }
-
-    # def test_get_all_vehicles_empty(self):
-    #     """
-    #     Test GET /vehicle when there are no vehicles in the database.
-    #     """
-    #     response = self.client.get('/vehicle')
-    #     assert response.status_code == 200
-    #     assert response.json == []
 
     def test_add_vehicle_success(self):
         """
