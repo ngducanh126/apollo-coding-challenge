@@ -358,7 +358,9 @@ I developed a dedicated testing suite to ensure the GraphQL API is functional, r
 
 The starting point of the application.
     Introduces users to the Vehicle Management System with a welcoming message and a call-to-action button to view the list of vehicles.
-    
+
+    <img width="959" alt="home" src="https://github.com/user-attachments/assets/cfc85f5f-1137-47e0-8586-20b4d64754f1">
+
 
 **2.  Vehicles List Page:**
     
