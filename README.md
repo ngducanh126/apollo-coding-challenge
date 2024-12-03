@@ -26,6 +26,8 @@ The service must handle invalid or malformed requests with appropriate error res
 
 ## Overview:
 
+**A quick note  : the server is inital empty. You must python apollo-coding-challenge/vehicle-api-server/fire_into_database.py to feed data into the database.(this will be covered more in depth)**
+
 This project focuses on building both **REST API and GraphQL** servers for managing vehicle records in a database. While the problem statement primarily leans toward a REST API approach, I also developed a GraphQL API server to explore its flexibility and efficiency in handling data operations. Both servers use **Python Flask** for the backend and **SQLite** for data storage. Key features include robust validation, error handling, logging, rate limiting, and security best practices.
 
 On the client side, I developed a React application and implemented Data Science scripts to explore and experiment with the API.
