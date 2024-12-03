@@ -26,7 +26,7 @@ The service must handle invalid or malformed requests with appropriate error res
 
 ## Overview:
 
-**A quick note  : the server is inital empty. You must python apollo-coding-challenge/vehicle-api-server/fire_into_database.py to feed data into the database.(this will be covered more in depth)**
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
 
 This project focuses on building both **REST API and GraphQL** servers for managing vehicle records in a database. While the problem statement primarily leans toward a REST API approach, I also developed a GraphQL API server to explore its flexibility and efficiency in handling data operations. Both servers use **Python Flask** for the backend and **SQLite** for data storage. Key features include robust validation, error handling, logging, rate limiting, and security best practices.
 
@@ -74,6 +74,8 @@ On the client side, I developed a React application and implemented Data Science
   
 
 ### REST API Server
+
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
 
 
 
@@ -124,6 +126,8 @@ You can also run the script **fire_data_into_database.py** to feed some data and
 
 ### GraphQL server Setup
 
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
+
 
 Activate the virtual environment you created during the REST API setup. Make sure you are at **apollo-coding-challenge** directory (the home directory).
 
@@ -159,6 +163,8 @@ For the GraphQL server run:
 
 ### Starting the React application:
 
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
+
 Navigate to apollo-coding-challenge/uses-cases/Web-App/vehicle-web-app:
     
 
@@ -176,6 +182,8 @@ I suggest you run the file **vehicle-api-server/fire_into_database.py** so that 
   
 
 ### Data Science Stuffs
+
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
 
 Make sure there is data in the database first. You can do this by running the file **vehicle-api-server/fire_into_database.py**
 
@@ -208,7 +216,8 @@ In addition, navigate to apollo-coding-challenge/uses-cases/Web-App/Data-Science
   
 
 # 2. A more in-depth look at the Project
-    
+
+**A quick note  : the server is initally empty. After you start the server, you should run: " python apollo-coding-challenge/vehicle-api-server/fire_into_database.py " to feed data into the database and play around with the API.**
 
 ## REST API server
 
