@@ -48,22 +48,6 @@ class TestVehicleAPI:
             db.execute("DELETE FROM vehicles")
             db.commit()
 
-    def setup_method(self):
-        """
-        Set up the test client before each test.
-        """
-        self.client = app.test_client()
-        self.example_vehicle = {
-            "vin": "1HGCM82633A123457",
-            "manufacturer_name": "Honda",
-            "description": "Reliable sedan",
-            "horse_power": 150,
-            "model_name": "Accord",
-            "model_year": 2020,
-            "purchase_price": 25000.50,
-            "fuel_type": "Gasoline"
-        }
-
     def test_add_vehicle_success(self):
         """
         Test POST /vehicle with valid data.
@@ -584,7 +568,6 @@ class TestVehicleAPI:
     def test_delete_vehicle_success(self):
         # add the vehicle to the database
         self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
-
         # delete the vehicle
         response = self.client.delete(f'/vehicle/{self.example_vehicle["vin"]}')
         assert response.status_code == 204  
