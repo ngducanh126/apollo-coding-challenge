@@ -1,11 +1,14 @@
 import pandas as pd
+import os
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import Ridge, Lasso
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Load data
-file_path = "../Data-Storage/processed/vehicles_cleaned.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, '../Data-Storage/processed/vehicles_cleaned.csv')
+
 data = pd.read_csv(file_path)
 
 data = pd.get_dummies(data, columns=['fuel_type', 'manufacturer_name', 'model_name'], drop_first=True)

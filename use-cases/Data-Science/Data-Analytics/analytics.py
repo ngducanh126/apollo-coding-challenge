@@ -1,13 +1,16 @@
+import os
 import pandas as pd
 
 def load_data(file_path):
+    script_dir = os.path.dirname(os.path.abspath(__file__)) 
+    resolved_file_path = os.path.join(script_dir, file_path) 
     try:
-        df = pd.read_csv(file_path)
-        print(f"Successfully loaded data from {file_path}.")
+        df = pd.read_csv(resolved_file_path)
         return df
     except FileNotFoundError:
-        print(f"Error: The file {file_path} does not exist.")
+        print(f"Error: The file {resolved_file_path} does not exist.")
         return None
+
 
 def analyze_data(df):
     print("\n--- Data Insights ---")
