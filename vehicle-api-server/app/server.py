@@ -94,7 +94,7 @@ def add_vehicle():
         return jsonify({'error': f'Unexpected fields: {unexpected_fields}'}), 422
 
     # Validate field types
-    field_errors = validate_fields(data)
+    field_errors = get_field_errors(data)
     if field_errors:
         logger.error(f'Field validation errors: {field_errors}')
         return jsonify({'error': f'Error validate fields: {field_errors}'}), 422
@@ -200,7 +200,7 @@ def update_vehicle(vin):
         logger.error(f'Unexpected fields provided: {unexpected_fields}')
         return jsonify({'error': f'Unexpected fields: {unexpected_fields}'}), 422
 
-    field_errors = validate_fields(data)
+    field_errors = get_field_errors(data)
     if field_errors:
         logger.error(f'Field validation errors: {field_errors}')
         return jsonify({'error': field_errors}), 422
@@ -288,7 +288,7 @@ def find_missing_fields(data, required_fields):
     return missing_fields
 
 
-def validate_fields(data):
+def get_field_errors(data):
     """
     Validate the fields (ONLY checks fields that are present in the data)
     Checks for correct type and checks to ensure all fields are non-empty and numeric fields are greater than or equal to 0 
@@ -327,8 +327,6 @@ def validate_fields(data):
                     raise ValueError(f"Unsupported type: {expected_type}")
             except ValueError:
                 errors.append(f"{field} must be convertible to {expected_type.__name__}")
-        else:
-            errors.append(f"{field} is missing")
     
     return errors
 
