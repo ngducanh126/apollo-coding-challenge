@@ -82,8 +82,12 @@ On the client side, I developed a React application and implemented Data Science
 First, clone the repository to your local machine:
 - git clone [https://github.com/ngducanh126/apollo-coding-challenge.git](https://github.com/ngducanh126/apollo-coding-challenge.git)
 
+
+Make sure you have Python installed. Run this script to check:
+- python --version
+
+If this returns an error, you have not installed Python. Please install it.
   
- 
 
 Navigate to **apollo-coding-challenge** (the home directory).
 
@@ -167,13 +171,20 @@ For the GraphQL server run:
 
 Navigate to apollo-coding-challenge/uses-cases/Web-App/vehicle-web-app:
     
+Make sure you have npm installed by running:
+- npm --version
+
+
+If there was an error, npm is not installed. Please install Node.js and this will give you npm.
+
 
 Use npm or yarn to install the required dependencies:
 - npm install
     
 Start the Development Server: 
 - npm start
-    
+
+
  Open your browser and go to http://localhost:3000 to view the app
     
 I suggest you run the file **vehicle-api-server/fire_into_database.py** so that there is data for us to play around with in the React app.
