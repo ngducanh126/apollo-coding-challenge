@@ -81,7 +81,7 @@ First, clone the repository to your local machine:
   
  
 
-Navigate to **apollo-coding-challenge/vehicle-api-server**
+Navigate to **apollo-coding-challenge** (the home directory).
 
   
 
@@ -92,14 +92,14 @@ Create a virtual environment:
 
 Activate the virtual environment:
 
--   Windows: venv\Scripts\activate
+-   Windows:  venv\Scripts\activate
     
 -   macOS/Linux: source venv/bin/activate
     
 
   
 
-Install the required dependencies: 
+Now go to **apollo-coding-challenge/vehicle-api-server**  and install the required dependencies: 
 - pip install -r requirements.txt
 
 If you enter any errors, updating pip should likely fit it:
@@ -122,9 +122,8 @@ You can also run the script **fire_data_into_database.py** to feed some data and
 
 ### GraphQL server Setup
 
-Ensure you are in **apollo-coding-challenge/vehicle-api-server**
 
-Activate the virtual environment you created during the REST API setup:
+Activate the virtual environment you created during the REST API setup. Make sure you are at **apollo-coding-challenge** directory (the home directory).
 
 -   Windows: venv\Scripts\activate
     
@@ -133,7 +132,7 @@ Activate the virtual environment you created during the REST API setup:
 
   
 
-Start the GraphQL API server by running:
+Now start the GraphQL API server. Go to **apollo-coding-challenge/vehicle-api-server** . Then run:
 - python graphql_run.py
 
   
