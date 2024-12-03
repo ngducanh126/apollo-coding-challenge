@@ -100,7 +100,7 @@ Activate the virtual environment:
     
 -   macOS/Linux: source venv/bin/activate
     
-
+**Note that every following commands (except for the React App) should be done within this virtual environment, which you just did above**
   
 
 Now go to **apollo-coding-challenge/vehicle-api-server**  and install the required dependencies: 
@@ -136,7 +136,7 @@ Activate the virtual environment you created during the REST API setup. Make sur
 -   macOS/Linux: source venv/bin/activate
     
 
-  
+**Note that every following commands (except the React App ) should be done within this virtual environment, which you just did above**
 
 Now start the GraphQL API server. Go to **apollo-coding-challenge/vehicle-api-server** . Then run:
 - python graphql_run.py
@@ -187,6 +187,14 @@ I suggest you run the file **vehicle-api-server/fire_into_database.py** so that 
 
 Make sure there is data in the database first. You can do this by running the file **vehicle-api-server/fire_into_database.py**
 
+Again, activate the virtual environment you created earlier. Go to **apollo-coding-challenge** directory (the home directory) and activate the virtual environment:
+
+-   Windows: venv\Scripts\activate
+    
+-   macOS/Linux: source venv/bin/activate
+
+**Note that every following commands should be done within this virtual environment, which you just did above**
+
 Now navigate to **apollo-coding-challenge/uses-cases/Web-App/Data-Science**
     
 Run : 
@@ -198,7 +206,8 @@ If you enter any errors, updating pip should likely fit it:
   
 
 Run : 
-- python extract_load_transform.py. 
+- python extract_load_transform.py
+   
 This file grabs data from the database via our REST endpoints and cleans the data and stores it in Data-Storage/processed/vehicles_cleaned.csv
     
 
