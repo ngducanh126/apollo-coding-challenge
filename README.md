@@ -102,6 +102,8 @@ Activate the virtual environment:
 Install the required dependencies: 
 - pip install -r requirements.txt
 
+If you enter any errors, updating pip should likely fit it:
+- python -m pip install --upgrade pip
   
 
 Start the REST API server in **apollo-coding-challenge/vehicle-api-server:**
@@ -180,7 +182,11 @@ Now navigate to **apollo-coding-challenge/uses-cases/Web-App/Data-Science**
     
 Run : 
 - pip install -r requirements.txt
-    
+
+
+If you enter any errors, updating pip should likely fit it:
+- python -m pip install --upgrade pip
+  
 
 Run : 
 - python extract_load_transform.py. 
