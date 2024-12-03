@@ -45,57 +45,57 @@ def feed_good_data():
         else:
             print("Failed to add vehicle")
 
-# Generate data with missing values and duplicates into the DB
-def feed_bad_data():
-    data = [
-        {
-            "vin": generate_vin(),
-            "manufacturer_name": random.choice(manufacturers),
-            "description": "A reliable car",  # No missing value here
-            "horse_power": random.randint(100, 400),  # Valid value
-            "model_name": random.choice(["Corolla", "Civic", "F-150", "Accord", "Camry"]),
-            "model_year": random.randint(2000, 2025),  # Valid value
-            "purchase_price": round(random.uniform(15000, 50000), 2),  # Valid value
-            "fuel_type": random.choice(fuel_types),
-        },
-        {
-            "vin": generate_vin(),
-            "manufacturer_name": None,  # Missing manufacturer name
-            "description": "Missing manufacturer",  # Missing value example
-            "horse_power": random.randint(100, 400),
-            "model_name": random.choice(["Golf", "Passat"]),
-            "model_year": random.randint(2000, 2025),
-            "purchase_price": round(random.uniform(15000, 50000), 2),
-            "fuel_type": random.choice(fuel_types),
-        },
-        {
-            "vin": generate_vin(),
-            "manufacturer_name": "Toyota",
-            "description": "Duplicate vehicle",
-            "horse_power": random.randint(100, 400),
-            "model_name": "Corolla",
-            "model_year": 2020,
-            "purchase_price": 25000.50,
-            "fuel_type": "Gasoline",
-        },  # Duplicate data
-        {
-            "vin": generate_vin(),
-            "manufacturer_name": "Toyota",
-            "description": "Duplicate vehicle",
-            "horse_power": random.randint(100, 400),
-            "model_name": "Corolla",
-            "model_year": 2020,
-            "purchase_price": 25000.50,
-            "fuel_type": "Gasoline",
-        },  # Duplicate data
-    ]
+# # Generate data with missing values and duplicates into the DB
+# def feed_bad_data():
+#     data = [
+#         {
+#             "vin": generate_vin(),
+#             "manufacturer_name": random.choice(manufacturers),
+#             "description": "A reliable car",  # No missing value here
+#             "horse_power": random.randint(100, 400),  # Valid value
+#             "model_name": random.choice(["Corolla", "Civic", "F-150", "Accord", "Camry"]),
+#             "model_year": random.randint(2000, 2025),  # Valid value
+#             "purchase_price": round(random.uniform(15000, 50000), 2),  # Valid value
+#             "fuel_type": random.choice(fuel_types),
+#         },
+#         {
+#             "vin": generate_vin(),
+#             "manufacturer_name": None,  # Missing manufacturer name
+#             "description": "Missing manufacturer",  # Missing value example
+#             "horse_power": random.randint(100, 400),
+#             "model_name": random.choice(["Golf", "Passat"]),
+#             "model_year": random.randint(2000, 2025),
+#             "purchase_price": round(random.uniform(15000, 50000), 2),
+#             "fuel_type": random.choice(fuel_types),
+#         },
+#         {
+#             "vin": generate_vin(),
+#             "manufacturer_name": "Toyota",
+#             "description": "Duplicate vehicle",
+#             "horse_power": random.randint(100, 400),
+#             "model_name": "Corolla",
+#             "model_year": 2020,
+#             "purchase_price": 25000.50,
+#             "fuel_type": "Gasoline",
+#         },  # Duplicate data
+#         {
+#             "vin": generate_vin(),
+#             "manufacturer_name": "Toyota",
+#             "description": "Duplicate vehicle",
+#             "horse_power": random.randint(100, 400),
+#             "model_name": "Corolla",
+#             "model_year": 2020,
+#             "purchase_price": 25000.50,
+#             "fuel_type": "Gasoline",
+#         },  # Duplicate data
+#     ]
     
-    for this_data in data:
-        response = requests.post(post_url, json=data)
-        if response.status_code == 201:
-            print("Successfully added bad vehicle")
-        else:
-            print("Failed to add bad vehicle")
+#     for this_data in data:
+#         response = requests.post(post_url, json=data)
+#         if response.status_code == 201:
+#             print("Successfully added bad vehicle")
+#         else:
+#             print("Failed to add bad vehicle")
 
 
 if __name__ == "__main__":
