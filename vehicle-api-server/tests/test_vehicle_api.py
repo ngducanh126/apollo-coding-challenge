@@ -432,14 +432,13 @@ class TestVehicleAPI:
 
         # Change VIN in the request body
         updated_data = self.example_vehicle.copy()
-        updated_data["vin"] = "1HGCM82633A123457"  # Mismatched VIN
-
+        updated_data["vin"] = "1HGCM82633A123455"  # Mismatched VIN
         response = self.client.put(
-            f'/vehicle/{self.example_vehicle["vin"]}',  # Original VIN in URL
+            f'/vehicle/{self.example_vehicle["vin"]}', 
             data=json.dumps(updated_data),
             content_type='application/json'
         )
-        assert response.status_code == 422  # Expecting 422 Unprocessable Entity
+        assert response.status_code == 422  
         assert "VIN in request body must match VIN in URL" in response.json.get("error", "")
 
 
