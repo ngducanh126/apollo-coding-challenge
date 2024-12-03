@@ -61,7 +61,7 @@ def get_all_vehicles():
 
 
 @app.route('/vehicle', methods=['POST'])
-@limiter.limit("100000000/minute")
+@limiter.limit("100/minute")
 def add_vehicle():
     logger.debug('Received POST request')
 
@@ -133,7 +133,7 @@ def add_vehicle():
 
 
 @app.route('/vehicle/<vin>', methods=['GET'])
-@limiter.limit("50000/minute")  
+@limiter.limit("100/minute")  
 def get_vehicle(vin):
     logger.debug(f'Fetching a vehicle with VIN: {vin}')
 
@@ -163,7 +163,7 @@ def get_vehicle(vin):
     
 
 @app.route('/vehicle/<vin>', methods=['PUT'])
-@limiter.limit("100000000/minute")
+@limiter.limit("100/minute")
 def update_vehicle(vin):
     logger.debug(f'Received PUT request for VIN: {vin}')
 
@@ -238,7 +238,7 @@ def update_vehicle(vin):
 
 
 @app.route('/vehicle/<vin>', methods=['DELETE'])
-@limiter.limit("50000000/minute") 
+@limiter.limit("10/minute") 
 def delete_vehicle(vin):
     logger.debug(f'Received DELETE request for vehicle with VIN: {vin}')
 
