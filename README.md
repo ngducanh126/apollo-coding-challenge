@@ -51,6 +51,8 @@ On the client side, I developed a React application and implemented Data Science
 
 **Tests can be found at apollo-coding-challenge/vehicle-api-server/tests/**
 
+I developed a comprehensive testing suite to ensure the functionality, reliability, and security of the REST API endpoints. These tests use Python's unittest framework and an in-memory SQLite database to keep the testing environment isolated and efficient. More detail abot the test suite is covered in part 2.
+
   
 
 **In addition, here are important files at apollo-coding-challenge/vehicle-api-server:**
