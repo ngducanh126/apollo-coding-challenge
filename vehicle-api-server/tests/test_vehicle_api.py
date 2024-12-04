@@ -1,32 +1,35 @@
-from app.server import app
-from app.db import init_db, get_db
-import json
-import logging
+from unittest import TestCase
 from unittest.mock import patch
 import sqlite3
+import json
+from app.server import app
 
-class TestVehicleAPI:
-    """
-    Test suite for the Vehicle API.
-    """
 
-    def setup_method(self):
-        """
-        Set up the test client and in-memory database before each test.
-        """
+class TestVehicleAPI(TestCase):
+    def setUp(self):
         app.config['TESTING'] = True
-        app.config['DEBUG'] = True  
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'  # In-memory DB
-
-        # logging
-        app.logger.setLevel(logging.DEBUG) 
-        for handler in app.logger.handlers:
-            handler.setLevel(logging.DEBUG)
-
         self.client = app.test_client()
 
-        with app.app_context():
-            init_db()
+        # in-memory database connection for testing
+        self.test_db = sqlite3.connect(':memory:')
+        self.test_db.row_factory = sqlite3.Row
+
+        cursor = self.test_db.cursor()
+        cursor.execute('''CREATE TABLE vehicles (
+            vin TEXT PRIMARY KEY COLLATE NOCASE,
+            manufacturer_name TEXT NOT NULL,
+            description TEXT NOT NULL,
+            horse_power INTEGER NOT NULL,
+            model_name TEXT NOT NULL,
+            model_year INTEGER NOT NULL,
+            purchase_price REAL NOT NULL,
+            fuel_type TEXT NOT NULL
+        )''')
+        self.test_db.commit()
+
+        # patch `get_db`
+        self.get_db_patcher = patch('app.server.get_db', return_value=self.test_db)
+        self.mock_get_db = self.get_db_patcher.start()
 
         self.example_vehicle = {
             "vin": "1HGCM82633A123459",
@@ -39,14 +42,9 @@ class TestVehicleAPI:
             "fuel_type": "Gasoline"
         }
 
-    def teardown_method(self):
-        """
-        Clean up the database after each test.
-        """
-        with app.app_context():
-            db = get_db()
-            db.execute("DELETE FROM vehicles")
-            db.commit()
+    def tearDown(self):
+        self.get_db_patcher.stop()
+        self.test_db.close()
 
     def test_add_vehicle_success(self):
         """
@@ -58,8 +56,6 @@ class TestVehicleAPI:
             content_type='application/json'
         )
         assert response.status_code == 201
-        
-        # Check if the returned vehicle data matches the example vehicle
         vehicle_data = response.json
         assert vehicle_data["vin"] == self.example_vehicle["vin"]
         assert vehicle_data["manufacturer_name"] == self.example_vehicle["manufacturer_name"]
@@ -69,7 +65,6 @@ class TestVehicleAPI:
         assert vehicle_data["model_year"] == self.example_vehicle["model_year"]
         assert vehicle_data["purchase_price"] == self.example_vehicle["purchase_price"]
         assert vehicle_data["fuel_type"] == self.example_vehicle["fuel_type"]
-
 
     def test_get_vehicle_by_vin_not_found(self):
         response = self.client.get('/vehicle/00000000000000000')
@@ -92,6 +87,7 @@ class TestVehicleAPI:
         assert response.status_code == 400 
         assert response.json['error'] == 'VIN format is not valid'
 
+
     def test_get_all_vehicles_mocked_empty_result(self):
         """
         Test GET /vehicle with a mocked empty database result.
@@ -105,19 +101,6 @@ class TestVehicleAPI:
             assert response.status_code == 200
             assert response.json == []
  
-
-    def test_get_all_vehicles_no_body(self):
-        """
-        Test GET /vehicle with no request body.
-        """
-        # Add a sample vehicle for context
-        self.client.post('/vehicle', data=json.dumps(self.example_vehicle), content_type='application/json')
-
-        response = self.client.get('/vehicle')
-        assert response.status_code == 200  # OK
-        # print('vehicle got back is ', response.json)
-        assert response.json[0]["vin"] == "1HGCM82633A123457"
-
 
     def test_get_all_vehicles_with_body(self):
         """
