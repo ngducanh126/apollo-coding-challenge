@@ -484,7 +484,7 @@ The Data Science module in this project is structured to analyze, clean, and mod
 
 - predict_purchase_price.py: This is an AI model that predicts the price of a car using various historical input from the database
 
-# 3. Looking ahead: things I would implement further for the REST API if I have more time
+# 3. Looking ahead: things I would implement further for the API and the system if I have more time
 
   
 
@@ -492,7 +492,15 @@ The Data Science module in this project is structured to analyze, clean, and mod
 
 Right now, the /vehicle REST endpoint returns all records, which could slow things down as the dataset grows. I plan to add pagination with page and limit parameters  and this will make responses faster and more efficient.
 
-  
+**Filter and sorting as query parameters**
+
+This can give the client more flexibility to grab data.
+
+**API versioning**
+
+
+This supports backward compatability and ensures the client code that is using older versions of the API don't break.
+
 
 **Cybersecurity Upgrades**
 
