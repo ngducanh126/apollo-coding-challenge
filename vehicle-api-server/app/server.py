@@ -47,9 +47,13 @@ def get_all_vehicles():
         logger.error("GET request must not include a request body")
         return jsonify({'error': 'Request body is not allowed in GET request'}), 422
 
+    # per_page = int(request.args.get('per_page', 3))
+    # page = int(request.args.get('page', 1))
+    # offset = (page-1) * per_page
+
     try:
         db = get_db()
-        cursor = db.execute("SELECT * FROM vehicles")
+        cursor = db.execute("SELECT * FROM vehicles ",)
         vehicles = [dict(row) for row in cursor.fetchall()]
         return jsonify(vehicles), 200
     except sqlite3.Error as e:
@@ -236,7 +240,6 @@ def update_vehicle(vin):
         logger.error(f'Server error: {e}')
         return jsonify({'error': 'Server error'}), 500
 
-
 @app.route('/vehicle/<vin>', methods=['DELETE'])
 @limiter.limit("10/minute") 
 def delete_vehicle(vin):
@@ -274,6 +277,61 @@ def delete_vehicle(vin):
         logger.error(f'Server error while deleting vehicle with VIN {vin}: {e}')
         return jsonify({'error': 'Internal server error'}), 500
 
+
+@app.route('/vehicle/<vin>' , methods=['PATCH'])
+def patch_vehicle(vin):
+    #validate vin
+    if not validate_vin(vin):
+        return jsonify({'error':{'Error validating vin '}}),400
+
+    #data sent is json
+    if not request.is_json:
+        logger.error('Content-Type must be application/json')
+        return jsonify({'error': 'Content-Type must be application/json'}), 400
+    
+    try:
+        data = request.get_json()
+    except Exception as e:
+        logger.error(f'Error parsing JSON data: {e}')
+        return jsonify({'error': 'Invalid JSON format'}), 400
+    
+    # if no fields are provided for update
+    if not data:
+        return jsonify({'error': 'No fields to update'}), 400
+    
+    #vin in url matches vin sent in json
+    if not (data['vin'].lower() == vin.lower()):
+        return jsonify({'error':'vin does not matches vin in url'}),400
+
+    #validate fields
+    error_fields = get_field_errors(data)
+    if error_fields:
+        return jsonify({'error':'Error field'}), 422
+    
+    #CONSTRUCT THE SET CLAUSE AND PARAMS
+    set_clauses = []
+    params = []
+    for field,value in data.items():
+        if field != 'vin':
+            set_clauses.append(f'{field} = ?')
+            params.append(value)
+    set_clauses = ','.join(set_clauses)   #convert to string and get rid of trailing comma
+    params.append(data['vin'])
+
+    try:
+        query = f'update vehicles set {set_clauses} where vin = ?'
+        db = get_db()
+        cursor = db.execute(query, params)
+        db.commit()
+        if cursor.rowcount == 0:
+            return jsonify({'error': 'VIN not found'}), 404
+        return jsonify({'message': 'Vehicle updated successfully'}), 200
+
+    except sqlite3.Error as err:
+        return jsonify({'error':'Database error'}),500
+    except Exception as err:
+        return jsonify({'error':'Internal server error'}),500
+    
 
 def validate_vin(vin):
     if not vin or len(vin) != 17:
@@ -321,6 +379,8 @@ def get_field_errors(data):
                     if value < 0:
                         errors.append(f"{field} must be greater than or equal to 0")
                 elif expected_type == str:
+                    if not isinstance(value, str):
+                        raise ValueError(f"{field} must be a string")
                     if not value.strip():
                         errors.append(f"{field} must be a non-empty string")
                 else:
