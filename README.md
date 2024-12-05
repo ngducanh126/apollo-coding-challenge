@@ -484,7 +484,7 @@ The Data Science module in this project is structured to analyze, clean, and mod
 
 - predict_purchase_price.py: This is an AI model that predicts the price of a car using various historical input from the database
 
-# 3. Looking ahead: things I would implement further for the REST API if I have more time
+# 3. Looking ahead: things I would implement further for the API and the system if I have more time
 
   
 
